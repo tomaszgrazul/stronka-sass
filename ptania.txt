@@ -1,0 +1,6 @@
+1. _main_section Dlaczego rozszerzenie %top-text dostaj¹ tez inne klasy?
+
+2. Nie dzia³aj¹ regu³y media.
+3. Jak odnieœæ pixele z css do rzeczywistoœci?
+4. Jak dopasowaæ .main-section do okna przegl¹darki automatycznie?
+5. Jak przywi¹zaæ na sztywno footer aby by³ niezale¿ny od wielkoœci okna?

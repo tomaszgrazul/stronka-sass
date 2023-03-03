@@ -1,0 +1,47 @@
+nav {
+    flex-basis: 70%;
+
+    ul {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .nav-item {
+            display: inline-block;
+            padding: 30px; 
+            
+            a {
+                color: #9C9C9C;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+                transition: all 0.3s;
+                text-decoration: none;
+
+                &:hover {
+                    color: pink;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    nav {
+        flex-basis: 60%;
+    }
+
+    .nav-item {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .social-link {
+        font-size: 21px;
+        flex-basis: 20%;
+    }
+}
+
+

@@ -1,0 +1,17 @@
+@import 'utils/variables';
+@import 'utils/mixins';
+
+// @import 'base/normalize';
+@import 'base/global';
+
+@import 'layout/main_header';
+@import 'layout/nav';
+@import 'layout/main_section';
+@import 'layout/mandale';
+@import 'layout/olejne';
+@import 'layout/szkice';
+@import 'layout/akrylowe';
+@import 'layout/contact';
+@import 'layout/footer';
+
+@import 'components/buttons';
