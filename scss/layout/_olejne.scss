@@ -1,0 +1,69 @@
+.olejne {
+    height: 762px;
+    width: 100%;
+    background-image: url('../img/olejne.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+    position: absolute;
+    transition: opacity 1s;
+    opacity: 0;
+
+    &.switch-olejne-on {
+        display: block;
+        opacity: 1;
+    }
+
+    .olejne-container {
+        height: 50px;
+        color: rgb(194 24 24);
+        background-color: #ffffffd1;
+        position: relative;
+        display: flex;
+        align-items: center;
+        top: 130px;
+
+        .olejne-text {
+            margin-left: 250px;
+            font-family: $third-font;
+            font-size: 20px;
+            color: $secondary-font-color
+        }
+    }
+
+    .btn-abstrakcje-olejne {
+        @extend %btn-main;
+        top: 180px;
+        left: 250px;
+    }
+    
+    .btn-naturalistyczne {
+        @extend %btn-main;
+        top: 350px;
+        left: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .akrylowe-container {
+        top: 210px;
+    }
+
+    .btn-mandale {
+        top: 290px;
+        left: 85px;
+    }
+    
+    .btn-abstrakcje {
+        top: 350px;
+        left: 85px;
+    }
+
+    .akrylowe-text {
+        margin-left: 70px;
+    }
+} 
+
+
+

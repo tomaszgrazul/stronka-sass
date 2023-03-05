@@ -36,7 +36,6 @@
   z-index: 5;
 }
 .main-header-container .main-header-sign-container a:hover {
-  cursor: pointer;
   color: pink;
 }
 
@@ -100,22 +99,26 @@ nav ul .nav-item a:hover {
   }
 }
 .main-section .top-container .top-ewa, .main-section .top-container .top-galeria {
-  color: antiquewhite;
-  font-size: 2.5em;
   margin: 30px;
   text-shadow: 0px 5px rgb(53, 53, 53);
   text-align: center;
-  color: #FFFFFF;
+  color: #AA2C18;
   font-family: "Jura", sans-serif;
   letter-spacing: 5px;
 }
 
 .main-section {
-  height: 940px;
+  height: 762px;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gwiazda.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: -170px;
+  position: absolute;
+  transition: opacity 1s;
+}
+.main-section.switch-main-off {
+  display: none;
 }
 .main-section .top-container {
   background-color: rgba(186, 184, 184, 0.5294117647);
@@ -137,7 +140,6 @@ nav ul .nav-item a:hover {
   position: relative;
   top: 190px;
   margin-left: 250px;
-  padding: 15px;
 }
 .main-section .bottom-container a {
   padding: 10px;
@@ -166,13 +168,130 @@ nav ul .nav-item a:hover {
     background-position-y: 0;
   }
 }
-.akrylowe .btn-abstrakcje, .akrylowe .btn-mandale {
+.olejne {
+  height: 762px;
+  width: 100%;
+  background-image: url("../img/olejne.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: none;
+  position: absolute;
+  transition: opacity 1s;
+  opacity: 0;
+}
+.olejne.switch-olejne-on {
+  display: block;
+  opacity: 1;
+}
+.olejne .olejne-container {
+  height: 50px;
+  color: rgb(194, 24, 24);
+  background-color: rgba(255, 255, 255, 0.8196078431);
+  position: relative;
+  display: flex;
+  align-items: center;
+  top: 130px;
+}
+.olejne .olejne-container .olejne-text {
+  margin-left: 250px;
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  color: #FF7D69;
+}
+.olejne .btn-abstrakcje-olejne {
+  top: 180px;
+  left: 250px;
+}
+.olejne .btn-naturalistyczne {
+  top: 350px;
+  left: 15px;
+}
+
+@media (max-width: 400px) {
+  .akrylowe-container {
+    top: 210px;
+  }
+  .btn-mandale {
+    top: 290px;
+    left: 85px;
+  }
+  .btn-abstrakcje {
+    top: 350px;
+    left: 85px;
+  }
+  .akrylowe-text {
+    margin-left: 70px;
+  }
+}
+.szkice .szkice-container .szkice-picture-9 .picture-9, .szkice .szkice-container .szkice-picture-8 .picture-8, .szkice .szkice-container .szkice-picture-7 .picture-7, .szkice .szkice-container .szkice-picture-6 .picture-6, .szkice .szkice-container .szkice-picture-5 .picture-5, .szkice .szkice-container .szkice-picture-4 .picture-4, .szkice .szkice-container .szkice-picture-3 .picture-3, .szkice .szkice-container .szkice-picture-2 .picture-2, .szkice .szkice-container .szkice-picture-1 .picture-1 {
+  border: 8px double rgb(242, 239, 239);
+  box-shadow: 0 0 10px rgb(150, 150, 150);
+  transition: opacity 0.5s;
+}
+.szkice .szkice-container .szkice-picture-9 .picture-9:hover, .szkice .szkice-container .szkice-picture-8 .picture-8:hover, .szkice .szkice-container .szkice-picture-7 .picture-7:hover, .szkice .szkice-container .szkice-picture-6 .picture-6:hover, .szkice .szkice-container .szkice-picture-5 .picture-5:hover, .szkice .szkice-container .szkice-picture-4 .picture-4:hover, .szkice .szkice-container .szkice-picture-3 .picture-3:hover, .szkice .szkice-container .szkice-picture-2 .picture-2:hover, .szkice .szkice-container .szkice-picture-1 .picture-1:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.szkice {
+  display: none;
+  opacity: 0;
+}
+.szkice.switch-szkice-on {
+  display: block;
+  opacity: 1;
+}
+.szkice .szkice-text {
+  margin-top: 130px;
+  margin-left: 250px;
+  padding-bottom: 20px;
+  font-family: "Cinzel", serif;
+  color: #FF7D69;
+}
+.szkice .img-horizontal {
+  width: 600px;
+}
+.szkice .img-vertical {
+  width: 400px;
+}
+.szkice .szkice-text-2, .szkice .szkice-text-1 {
+  text-align: center;
+  padding: 5px;
+  font-family: "Cinzel", serif;
+  font-size: 16px;
+}
+.szkice .szkice-text-1 {
+  font-weight: 600;
+}
+.szkice .szkice-text-2 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.szkice .szkice-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.akrylowe .btn-abstrakcje, .akrylowe .btn-mandale, .olejne .btn-abstrakcje-olejne, .olejne .btn-naturalistyczne {
   background-color: white;
   color: green;
   height: 120px;
-  width: 220px;
+  width: 230px;
   position: relative;
   transition: all 0.3s;
+  font-family: "Cinzel", serif;
+  font-size: 22px;
+  transition: all 0.3s;
+}
+.akrylowe .btn-abstrakcje:hover, .akrylowe .btn-mandale:hover, .olejne .btn-abstrakcje-olejne:hover, .olejne .btn-naturalistyczne:hover {
+  background-color: #8FC9D9;
+}
+.akrylowe .btn-abstrakcje:hover a, .akrylowe .btn-mandale:hover a, .olejne .btn-abstrakcje-olejne:hover a, .olejne .btn-naturalistyczne:hover a {
+  color: white;
+}
+.akrylowe .btn-abstrakcje a, .akrylowe .btn-mandale a, .olejne .btn-abstrakcje-olejne a, .olejne .btn-naturalistyczne a {
+  text-decoration: none;
 }
 
 .akrylowe {
@@ -182,6 +301,14 @@ nav ul .nav-item a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: none;
+  position: absolute;
+  transition: opacity 1s;
+  opacity: 0;
+}
+.akrylowe.switch-akrylowe-on {
+  display: block;
+  opacity: 1;
 }
 .akrylowe .akrylowe-container {
   height: 50px;
@@ -194,6 +321,9 @@ nav ul .nav-item a:hover {
 }
 .akrylowe .akrylowe-container .akrylowe-text {
   margin-left: 250px;
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  color: #FF7D69;
 }
 .akrylowe .btn-mandale {
   top: 180px;
@@ -201,13 +331,7 @@ nav ul .nav-item a:hover {
 }
 .akrylowe .btn-abstrakcje {
   top: 350px;
-  left: 25px;
-}
-.akrylowe a {
-  text-decoration: none;
-}
-.akrylowe a:hover {
-  color: aquamarine;
+  left: 15px;
 }
 
 @media (max-width: 400px) {
@@ -228,14 +352,14 @@ nav ul .nav-item a:hover {
 }
 footer {
   background-color: rgba(186, 184, 184, 0.5294117647);
-  position: relative;
+  position: fixed;
   display: flex;
   align-items: center;
-  top: 386px;
+  bottom: 0;
   height: 50px;
+  width: 100%;
 }
-
-.footer-text {
+footer .footer-text {
   margin-left: 250px;
   font-family: "Jura", sans-serif;
   color: #FFFFFF;

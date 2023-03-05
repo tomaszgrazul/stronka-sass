@@ -1,14 +1,17 @@
 footer {
     background-color: #bab8b887;
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
-    top: 386px;
+    bottom: 0;
     height: 50px;
+    width: 100%;
+    // display: none;
+
+    .footer-text {
+        margin-left: 250px;
+        font-family: 'Jura', sans-serif;
+        color: #FFFFFF;
+    }
 }
 
-.footer-text {
-    margin-left: 250px;
-    font-family: 'Jura', sans-serif;
-    color: #FFFFFF;
-}

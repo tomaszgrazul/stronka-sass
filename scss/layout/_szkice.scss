@@ -1,0 +1,135 @@
+%frame {
+    border: 8px double rgb(242, 239, 239);
+    box-shadow: 0 0 10px rgb(150, 150, 150);
+    transition: opacity .5s;
+
+    &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+}
+
+.szkice {
+
+    // position: absolute;
+    display: none;
+    opacity: 0;
+
+    &.switch-szkice-on {
+        display: block;
+        opacity: 1;
+    }
+
+    .szkice-text {
+        margin-top: 130px;
+        margin-left: 250px;
+        padding-bottom: 20px;
+        font-family: $third-font;
+        color: $secondary-font-color;
+    }
+
+    .img-horizontal {
+        width: 600px;
+    }
+
+    .img-vertical {
+        width: 400px;
+    }
+
+    %szkice-text {
+        text-align: center;
+        padding: 5px;
+        font-family: $third-font;
+        font-size: 16px;
+    }
+
+    .szkice-text-1 {
+        @extend %szkice-text;
+        font-weight: 600;
+    }
+
+    .szkice-text-2 {
+        @extend %szkice-text;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .szkice-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+
+        .szkice-picture-1 {
+             // flex-basis: 50%;
+        
+            .picture-1 {
+                @extend %frame;
+            }
+        }
+
+        .szkice-picture-2 {
+            // flex-basis: 50%;
+        
+            .picture-2 {
+                @extend %frame;
+            }
+        }
+
+        .szkice-picture-3 {
+            // flex-basis: 50%;
+        
+            .picture-3 {
+                @extend %frame;
+            }
+        }
+
+        .szkice-picture-4 {
+            // flex-basis: 50%;
+        
+            .picture-4 {
+                @extend %frame;
+            }
+        }
+
+        .szkice-picture-5 {
+            // flex-basis: 50%;
+        
+            .picture-5 {
+                @extend %frame;
+            }
+        }
+
+        .szkice-picture-6 {
+            // flex-basis: 50%;
+        
+            .picture-6 {
+                @extend %frame;
+            }
+        }
+
+        .szkice-picture-7 {
+            // flex-basis: 50%;
+        
+            .picture-7 {
+                @extend %frame;
+            }
+        }
+
+        .szkice-picture-8 {
+            // flex-basis: 50%;
+        
+            .picture-8 {
+                @extend %frame;
+            }
+        }
+
+        .szkice-picture-9 {
+            // flex-basis: 50%;
+        
+            .picture-9 {
+                @extend %frame;
+            }
+        }
+    }
+}
