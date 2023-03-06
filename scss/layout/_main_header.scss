@@ -59,7 +59,10 @@
 }
 
 @media (max-width: 400px) {
-    .main-header-sign-container {
-        flex-basis: 100%;
+    .main-header-container {
+        .main-header-sign-container {
+            flex-basis: 100%;
+        }
     }
+
 } 

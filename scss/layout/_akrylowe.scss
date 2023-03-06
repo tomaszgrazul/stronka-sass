@@ -70,22 +70,26 @@
 }
 
 @media (max-width: 400px) {
-    .akrylowe-container {
-        top: 210px;
-    }
+    .akrylowe {
 
-    .btn-mandale {
-        top: 290px;
-        left: 85px;
-    }
+        .akrylowe-container {
+            top: 210px;
+            justify-content: center;
+
+            .akrylowe-text {
+                margin: 0;
+            }
+        }
     
-    .btn-abstrakcje {
-        top: 350px;
-        left: 85px;
-    }
-
-    .akrylowe-text {
-        margin-left: 70px;
+        .btn-mandale {
+            top: 290px;
+            left: 85px;
+        }
+        
+        .btn-abstrakcje {
+            top: 350px;
+            left: 85px;
+        }
     }
 } 
 

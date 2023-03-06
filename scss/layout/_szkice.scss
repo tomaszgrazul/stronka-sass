@@ -133,3 +133,17 @@
         }
     }
 }
+
+@media (max-width: 400px) {
+    .szkice {
+
+        .img-horizontal {
+            width: 300px;
+        }
+    
+        .img-vertical {
+            width: 300px;
+        }
+    }
+ 
+}

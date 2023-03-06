@@ -55,7 +55,7 @@
 }
 
 @media (max-width: 400px) {
-  .main-header-sign-container {
+  .main-header-container .main-header-sign-container {
     flex-basis: 100%;
   }
 }
@@ -86,14 +86,16 @@ nav ul .nav-item a:hover {
 }
 
 @media (max-width: 400px) {
-  nav {
+  .main-header-container nav {
     flex-basis: 60%;
   }
-  .nav-item {
-    font-size: 18px;
+  .main-header-container .nav-item {
     padding: 5px;
   }
-  .social-link {
+  .main-header-container .nav-item a {
+    font-size: 18px;
+  }
+  .main-header-container .social-link {
     font-size: 21px;
     flex-basis: 20%;
   }
@@ -108,12 +110,11 @@ nav ul .nav-item a:hover {
 }
 
 .main-section {
-  height: 762px;
+  height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gwiazda.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gwiazda-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y: -170px;
   position: absolute;
   transition: opacity 1s;
 }
@@ -154,22 +155,34 @@ nav ul .nav-item a:hover {
 }
 
 @media (max-width: 400px) {
-  .bottom-container,
-  .footer-text {
-    margin-left: 70px;
-  }
-  .top-container {
-    top: 180px;
-  }
-  footer {
-    top: 250px;
-  }
   .main-section {
-    background-position-y: 0;
+    background-position: center;
+  }
+  .main-section .top-container {
+    top: 200px;
+  }
+  .main-section .top-container .top-galeria {
+    font-size: 32px;
+    margin: 10px;
+  }
+  .main-section .top-container .top-ewa {
+    font-size: 26px;
+    margin: 10px;
+  }
+  .main-section .bottom-container {
+    margin-left: 70px;
+    top: 270px;
+  }
+  .main-section .bottom-container p {
+    padding: 5px;
+  }
+  .main-section .bottom-container p a {
+    font-size: 18px;
+    padding: 0;
   }
 }
 .olejne {
-  height: 762px;
+  height: 100vh;
   width: 100%;
   background-image: url("../img/olejne.jpg");
   background-size: cover;
@@ -209,19 +222,20 @@ nav ul .nav-item a:hover {
 }
 
 @media (max-width: 400px) {
-  .akrylowe-container {
+  .olejne .olejne-container {
     top: 210px;
+    justify-content: center;
   }
-  .btn-mandale {
+  .olejne .olejne-container .olejne-text {
+    margin: 0;
+  }
+  .olejne .btn-abstrakcje-olejne {
     top: 290px;
     left: 85px;
   }
-  .btn-abstrakcje {
+  .olejne .btn-naturalistyczne {
     top: 350px;
     left: 85px;
-  }
-  .akrylowe-text {
-    margin-left: 70px;
   }
 }
 .szkice .szkice-container .szkice-picture-9 .picture-9, .szkice .szkice-container .szkice-picture-8 .picture-8, .szkice .szkice-container .szkice-picture-7 .picture-7, .szkice .szkice-container .szkice-picture-6 .picture-6, .szkice .szkice-container .szkice-picture-5 .picture-5, .szkice .szkice-container .szkice-picture-4 .picture-4, .szkice .szkice-container .szkice-picture-3 .picture-3, .szkice .szkice-container .szkice-picture-2 .picture-2, .szkice .szkice-container .szkice-picture-1 .picture-1 {
@@ -272,6 +286,14 @@ nav ul .nav-item a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+@media (max-width: 400px) {
+  .szkice .img-horizontal {
+    width: 300px;
+  }
+  .szkice .img-vertical {
+    width: 300px;
+  }
 }
 .akrylowe .btn-abstrakcje, .akrylowe .btn-mandale, .olejne .btn-abstrakcje-olejne, .olejne .btn-naturalistyczne {
   background-color: white;
@@ -335,19 +357,20 @@ nav ul .nav-item a:hover {
 }
 
 @media (max-width: 400px) {
-  .akrylowe-container {
+  .akrylowe .akrylowe-container {
     top: 210px;
+    justify-content: center;
   }
-  .btn-mandale {
+  .akrylowe .akrylowe-container .akrylowe-text {
+    margin: 0;
+  }
+  .akrylowe .btn-mandale {
     top: 290px;
     left: 85px;
   }
-  .btn-abstrakcje {
+  .akrylowe .btn-abstrakcje {
     top: 350px;
     left: 85px;
-  }
-  .akrylowe-text {
-    margin-left: 70px;
   }
 }
 footer {
@@ -363,4 +386,10 @@ footer .footer-text {
   margin-left: 250px;
   font-family: "Jura", sans-serif;
   color: #FFFFFF;
+}
+
+@media (max-width: 400px) {
+  footer .footer-text {
+    margin-left: 70px;
+  }
 }/*# sourceMappingURL=style.css.map */

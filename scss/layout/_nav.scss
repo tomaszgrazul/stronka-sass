@@ -29,19 +29,24 @@ nav {
 }
 
 @media (max-width: 400px) {
-    nav {
-        flex-basis: 60%;
-    }
+    .main-header-container {
+        nav {
+            flex-basis: 60%;
+        }
+    
+        .nav-item {
+            padding: 5px;
 
-    .nav-item {
-        font-size: 18px;
-        padding: 5px;
-    }
-
-    .social-link {
-        font-size: 21px;
-        flex-basis: 20%;
-    }
+            a {
+                font-size: 18px;
+            }
+        }
+    
+        .social-link {
+            font-size: 21px;
+            flex-basis: 20%;
+        }
+    } 
 }
 
 

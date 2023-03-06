@@ -1,10 +1,2 @@
-1. _main_section Dlaczego rozszerzenie %top-text dostaj¹ tez inne klasy?
-
-2. Nie dzia³aj¹ regu³y media.
-3. Jak odnieœæ pixele z css do rzeczywistoœci?
-4. Jak dopasowaæ .main-section do okna przegl¹darki automatycznie?
-5. Jak przywi¹zaæ na sztywno footer aby by³ niezale¿ny od wielkoœci okna?
-6. Jak przesun¹æ image razem z linear-gradient?
-7. Dlaczego musi byæ kotwica aby poprawnie dzia³a³o prze³¹czanie?
-8. Szkice. Jak dopasowaæ obrazek do div?
-9. Szkice. Jak zamkn¹æ obrazek po wyœwietleniu?
+1. opacity, prze³¹czanie
+2. Jak przesun¹æ image razem z linear-gradient?

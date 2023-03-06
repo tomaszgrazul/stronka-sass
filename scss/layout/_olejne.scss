@@ -1,5 +1,5 @@
 .olejne {
-    height: 762px;
+    height: 100vh;
     width: 100%;
     background-image: url('../img/olejne.jpg');
     background-size: cover;
@@ -46,22 +46,26 @@
 }
 
 @media (max-width: 400px) {
-    .akrylowe-container {
-        top: 210px;
-    }
+    .olejne {
 
-    .btn-mandale {
-        top: 290px;
-        left: 85px;
-    }
+        .olejne-container {
+            top: 210px;
+            justify-content: center;
+
+            .olejne-text {
+                margin: 0;
+            }
+        }
     
-    .btn-abstrakcje {
-        top: 350px;
-        left: 85px;
-    }
-
-    .akrylowe-text {
-        margin-left: 70px;
+        .btn-abstrakcje-olejne {
+            top: 290px;
+            left: 85px;
+        }
+        
+        .btn-naturalistyczne{
+            top: 350px;
+            left: 85px;
+        }
     }
 } 
 
