@@ -2,12 +2,24 @@
     display: none;
     opacity: 0;
 
+    header {
+        font-family: $third-font;
+        color: #48656D;
+        font-size: 24px;
+
+        p {
+            position: relative;
+            margin-bottom: 20px;
+            left: 490px; 
+        }
+    }
+
     .contact-container {
         // flex-basis: 50%;
         display: flex;
         flex-wrap: wrap;
         position: relative;
-        top: 200px;
+        top: 150px;
         left: 250px;
    
        .picture {
@@ -47,12 +59,15 @@
    }
 
    .contact-sign {
-        position: relative;
-        top: 20px;
-        left: 480px;
+
+        flex-basis: 100%;
+        height: 60px;
 
         img {
-            width: 15%;
+            width: 200px;
+            position: relative;
+            top: 20px;
+            left: 480px;
         }
     }
 
@@ -66,10 +81,31 @@
     }
 }
 
+@media (min-width: 992px) {
+
+    .contact {
+        
+        header {
+            display: block;
+            flex-basis: 100%;
+        }
+    }
+}
+
 @media (max-width: 400px) {
     .contact {
         .contact-container {
+            top: 200px;
             left: 35px;
+
+            header {
+                flex-basis: 85%;
+
+                p {
+                    position: initial;
+                    text-align: center;
+                }
+            }
 
             .picture {
                 width: 315px;
@@ -80,11 +116,11 @@
             }
 
             .contact-sign {
-                left: 35px;
-                top: 0;
+                flex-basis: 85%;
+                text-align: center;
 
                 img {
-                    width: 40%;
+                    position: initial;
                 }
             }
 

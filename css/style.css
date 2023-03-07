@@ -380,11 +380,21 @@ nav ul .nav-item a:hover {
   display: none;
   opacity: 0;
 }
+.contact header {
+  font-family: "Cinzel", serif;
+  color: #48656D;
+  font-size: 24px;
+}
+.contact header p {
+  position: relative;
+  margin-bottom: 20px;
+  left: 490px;
+}
 .contact .contact-container {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  top: 200px;
+  top: 150px;
   left: 250px;
 }
 .contact .contact-container .picture {
@@ -417,12 +427,14 @@ nav ul .nav-item a:hover {
   color: #AA2C18;
 }
 .contact .contact-sign {
+  flex-basis: 100%;
+  height: 60px;
+}
+.contact .contact-sign img {
+  width: 200px;
   position: relative;
   top: 20px;
   left: 480px;
-}
-.contact .contact-sign img {
-  width: 15%;
 }
 .contact .img-vertical {
   width: 435px;
@@ -432,9 +444,23 @@ nav ul .nav-item a:hover {
   opacity: 1;
 }
 
+@media (min-width: 992px) {
+  .contact header {
+    display: block;
+    flex-basis: 100%;
+  }
+}
 @media (max-width: 400px) {
   .contact .contact-container {
+    top: 200px;
     left: 35px;
+  }
+  .contact .contact-container header {
+    flex-basis: 85%;
+  }
+  .contact .contact-container header p {
+    position: initial;
+    text-align: center;
   }
   .contact .contact-container .picture {
     width: 315px;
@@ -443,11 +469,11 @@ nav ul .nav-item a:hover {
     width: 85%;
   }
   .contact .contact-container .contact-sign {
-    left: 35px;
-    top: 0;
+    flex-basis: 85%;
+    text-align: center;
   }
   .contact .contact-container .contact-sign img {
-    width: 40%;
+    position: initial;
   }
   .contact .contact-container address {
     top: 10px;
