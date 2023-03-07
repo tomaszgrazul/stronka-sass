@@ -139,8 +139,11 @@ nav ul .nav-item a:hover {
 }
 .main-section .bottom-container {
   position: relative;
-  top: 190px;
+  top: 310px;
   margin-left: 250px;
+}
+.main-section .bottom-container p {
+  padding-bottom: 5px;
 }
 .main-section .bottom-container a {
   padding: 10px;
@@ -238,17 +241,17 @@ nav ul .nav-item a:hover {
     left: 85px;
   }
 }
-.szkice .szkice-container .szkice-picture-9 .picture-9, .szkice .szkice-container .szkice-picture-8 .picture-8, .szkice .szkice-container .szkice-picture-7 .picture-7, .szkice .szkice-container .szkice-picture-6 .picture-6, .szkice .szkice-container .szkice-picture-5 .picture-5, .szkice .szkice-container .szkice-picture-4 .picture-4, .szkice .szkice-container .szkice-picture-3 .picture-3, .szkice .szkice-container .szkice-picture-2 .picture-2, .szkice .szkice-container .szkice-picture-1 .picture-1 {
+.contact .contact-container .picture, .szkice .szkice-container .szkice-picture .picture {
   border: 8px double rgb(242, 239, 239);
   box-shadow: 0 0 10px rgb(150, 150, 150);
   transition: opacity 0.5s;
 }
-.szkice .szkice-container .szkice-picture-9 .picture-9:hover, .szkice .szkice-container .szkice-picture-8 .picture-8:hover, .szkice .szkice-container .szkice-picture-7 .picture-7:hover, .szkice .szkice-container .szkice-picture-6 .picture-6:hover, .szkice .szkice-container .szkice-picture-5 .picture-5:hover, .szkice .szkice-container .szkice-picture-4 .picture-4:hover, .szkice .szkice-container .szkice-picture-3 .picture-3:hover, .szkice .szkice-container .szkice-picture-2 .picture-2:hover, .szkice .szkice-container .szkice-picture-1 .picture-1:hover {
+.contact .contact-container .picture:hover, .szkice .szkice-container .szkice-picture .picture:hover {
   opacity: 0.5;
-  cursor: pointer;
 }
 
 .szkice {
+  position: absolute;
   display: none;
   opacity: 0;
 }
@@ -317,7 +320,7 @@ nav ul .nav-item a:hover {
 }
 
 .akrylowe {
-  height: 762px;
+  height: 100vh;
   width: 100%;
   background-image: url("../img/mandala.jpg");
   background-size: cover;
@@ -371,6 +374,89 @@ nav ul .nav-item a:hover {
   .akrylowe .btn-abstrakcje {
     top: 350px;
     left: 85px;
+  }
+}
+.contact {
+  display: none;
+  opacity: 0;
+}
+.contact .contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: 200px;
+  left: 250px;
+}
+.contact .contact-container .picture {
+  width: 450px;
+  pointer-events: none;
+}
+.contact .contact-container .contact-text {
+  width: 45%;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+.contact .contact-container .contact-text p {
+  padding: 11px;
+  margin-left: 30px;
+  text-transform: none;
+  color: #4A4A4A;
+}
+.contact .contact-container address {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  position: relative;
+  top: 50px;
+}
+.contact .contact-container address p {
+  padding: 10px;
+  margin-left: 30px;
+  text-transform: none;
+  color: #AA2C18;
+}
+.contact .contact-sign {
+  position: relative;
+  top: 20px;
+  left: 480px;
+}
+.contact .contact-sign img {
+  width: 15%;
+}
+.contact .img-vertical {
+  width: 435px;
+}
+.contact.switch-contact-on {
+  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 400px) {
+  .contact .contact-container {
+    left: 35px;
+  }
+  .contact .contact-container .picture {
+    width: 315px;
+  }
+  .contact .contact-container .contact-text {
+    width: 85%;
+  }
+  .contact .contact-container .contact-sign {
+    left: 35px;
+    top: 0;
+  }
+  .contact .contact-container .contact-sign img {
+    width: 40%;
+  }
+  .contact .contact-container address {
+    top: 10px;
+  }
+  .contact .contact-container address p {
+    margin-left: 50px;
+  }
+  .contact .img-vertical {
+    width: 300px;
   }
 }
 footer {

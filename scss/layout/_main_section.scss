@@ -43,9 +43,12 @@
 
     .bottom-container {
         position: relative;
-        top: 190px;
+        top: 310px;
         margin-left: 250px;
-        // padding: 15px;
+
+        p {
+            padding-bottom: 5px;
+        }
 
         a {
             padding: 10px;

@@ -5,13 +5,14 @@
 
     &:hover {
         opacity: 0.5;
-        cursor: pointer;
     }
 }
 
+
+
 .szkice {
 
-    // position: absolute;
+    position: absolute;
     display: none;
     opacity: 0;
 
@@ -60,74 +61,10 @@
         justify-content: space-around;
     
 
-        .szkice-picture-1 {
+        .szkice-picture {
              // flex-basis: 50%;
         
-            .picture-1 {
-                @extend %frame;
-            }
-        }
-
-        .szkice-picture-2 {
-            // flex-basis: 50%;
-        
-            .picture-2 {
-                @extend %frame;
-            }
-        }
-
-        .szkice-picture-3 {
-            // flex-basis: 50%;
-        
-            .picture-3 {
-                @extend %frame;
-            }
-        }
-
-        .szkice-picture-4 {
-            // flex-basis: 50%;
-        
-            .picture-4 {
-                @extend %frame;
-            }
-        }
-
-        .szkice-picture-5 {
-            // flex-basis: 50%;
-        
-            .picture-5 {
-                @extend %frame;
-            }
-        }
-
-        .szkice-picture-6 {
-            // flex-basis: 50%;
-        
-            .picture-6 {
-                @extend %frame;
-            }
-        }
-
-        .szkice-picture-7 {
-            // flex-basis: 50%;
-        
-            .picture-7 {
-                @extend %frame;
-            }
-        }
-
-        .szkice-picture-8 {
-            // flex-basis: 50%;
-        
-            .picture-8 {
-                @extend %frame;
-            }
-        }
-
-        .szkice-picture-9 {
-            // flex-basis: 50%;
-        
-            .picture-9 {
+            .picture {
                 @extend %frame;
             }
         }
@@ -145,5 +82,4 @@
             width: 300px;
         }
     }
- 
 }
