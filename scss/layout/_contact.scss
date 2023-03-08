@@ -81,22 +81,12 @@
     }
 }
 
-@media (min-width: 992px) {
-
-    .contact {
-        
-        header {
-            display: block;
-            flex-basis: 100%;
-        }
-    }
-}
-
-@media (max-width: 400px) {
+@media (max-width: 992px) {
     .contact {
         .contact-container {
-            top: 200px;
-            left: 35px;
+            top: 180px;
+            left: 5px;
+            justify-content: center;
 
             header {
                 flex-basis: 85%;
@@ -126,15 +116,54 @@
 
             address {
                 top: 10px;
+                text-align: center;
 
                 p {
-                    margin-left: 50px;
+                    margin: 0;
                 }
             }
         }
 
         .img-vertical {
             width: 300px;
+        }
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .contact {
+        .contact-container {
+            left: 35px;
+     
+            header {
+             flex-basis: 100%;
+            }
+
+            .contact-text p {
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1201px) {
+    .contact {     
+        header {
+            flex-basis: 100%;
+        }
+
+        .contact-sign img {
+            left: 550px;
+        }
+        
+        .contact-container {
+            .picture {
+                width: 515px;
+    
+                .img-vertical {
+                    width: 500px;
+                }
+            }
         }
     }
 }

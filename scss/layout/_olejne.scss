@@ -21,35 +21,77 @@
         background-color: #ffffffd1;
         position: relative;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         top: 130px;
 
-        .olejne-text {
-            margin-left: 250px;
-            font-family: $third-font;
-            font-size: 20px;
-            color: $secondary-font-color
+        header {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            flex-basis: 100%;
+            
+            .olejne-text {
+                margin-left: 250px;
+                font-family: $third-font;
+                font-size: 20px;
+                color: $secondary-font-color
+            }
         }
     }
 
     .btn-abstrakcje-olejne {
-        @extend %btn-main;
-        top: 180px;
-        left: 250px;
+        flex-basis: 100%;
+
+        button {
+            @extend %btn-main;
+            margin: 100px 0 50px 250px;
+        }
     }
     
     .btn-naturalistyczne {
-        @extend %btn-main;
-        top: 350px;
-        left: 15px;
+        flex-basis: 100%;
+
+        button {
+            @extend %btn-main;
+            margin: 50px 0 0 250px;
+        }
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 490px) {
     .olejne {
 
         .olejne-container {
             top: 210px;
+
+            header {
+                justify-content: center;
+
+                .olejne-text {
+                    margin: 0;
+                }
+            }
+
+        }
+    
+        .btn-abstrakcje-olejne,
+        .btn-naturalistyczne {
+            display: flex;
+            justify-content: center;
+
+            button {
+                margin: 50px;
+            }
+        }
+    }
+} 
+
+@media (min-width: 491px) and (max-width: 992px) {
+    .olejne {
+
+        .olejne-container {
+            top: 180px;
             justify-content: center;
 
             .olejne-text {
@@ -63,8 +105,8 @@
         }
         
         .btn-naturalistyczne{
-            top: 350px;
-            left: 85px;
+            top: 450px;
+            left: -150px;
         }
     }
 } 

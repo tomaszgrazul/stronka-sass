@@ -49,4 +49,57 @@ nav {
     } 
 }
 
+@media (min-width: 400px) and (max-width: 576px) {
+    .main-header-container {
+        nav {
+            flex-basis: 70%;
+        }
+    
+        .nav-item {
+            padding: 5px;
+        }
+    
+        .social-links {
+            flex-basis: 20%;
+
+            .social-link {
+                font-size: 21px;
+            }
+        }
+    } 
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .main-header-container {
+        nav {
+            flex-basis: 58%;
+
+            .nav-item {
+                padding: 15px;
+            }
+        }
+     
+        .social-links {
+            flex-basis: 20%;
+
+            .social-link {
+                font-size: 25px;
+                margin: 0 15px;
+            }
+        }
+    } 
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .main-header-container {
+        nav {
+            flex-basis: 58%;
+
+            .nav-item {
+                padding: 25px;
+            }
+        }
+    }
+}
+
 

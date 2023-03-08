@@ -8,10 +8,7 @@
     }
 }
 
-
-
 .szkice {
-
     position: absolute;
     display: none;
     opacity: 0;
@@ -21,20 +18,12 @@
         opacity: 1;
     }
 
-    .szkice-text {
-        margin-top: 130px;
-        margin-left: 250px;
-        padding-bottom: 20px;
-        font-family: $third-font;
-        color: $secondary-font-color;
-    }
-
     .img-horizontal {
-        width: 600px;
+        width: 650px;
     }
 
     .img-vertical {
-        width: 400px;
+        width: 450px;
     }
 
     %szkice-text {
@@ -58,8 +47,19 @@
     .szkice-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        margin-top: 130px;
     
+        header {
+            flex-basis: 80%;
+    
+            p {
+                font-family: $third-font;
+                color: $secondary-font-color;
+                font-size: 20px;
+                padding-bottom: 10px;
+            }
+        }
 
         .szkice-picture {
              // flex-basis: 50%;
@@ -71,8 +71,17 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
     .szkice {
+        .szkice-container {
+            margin-top: 180px;
+
+            header {
+                p{
+                   text-align: center; 
+                }
+            }
+        }
 
         .img-horizontal {
             width: 300px;
@@ -80,6 +89,22 @@
     
         .img-vertical {
             width: 300px;
+        }
+    }
+}
+
+@media (min-width: 441px) and (max-width: 992px) {
+    .szkice {
+        .szkice-container {
+            margin-top: 180px;
+
+            .img-horizontal {
+            width: 450px;
+            }
+    
+            .img-vertical {
+            width: 450px;
+            } 
         }
     }
 }

@@ -41,9 +41,9 @@
 }
 
 .social-links{
-    margin: 25px 0;
     display: flex;
     flex-basis: 15%;
+    align-items: center;
 
     .social-link{
         font-size: 30px;
@@ -58,11 +58,27 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 576px) {
     .main-header-container {
         .main-header-sign-container {
             flex-basis: 100%;
         }
     }
-
 } 
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .main-header-container {
+        .main-header-sign-container {
+            flex-basis: 20%;
+            text-align: center;
+        }
+    }
+} 
+
+@media (min-width: 993px) {
+    .main-header-container {
+        .main-header-sign-container {
+            text-align: center;
+        }
+    }
+}

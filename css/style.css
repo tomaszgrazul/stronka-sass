@@ -40,9 +40,9 @@
 }
 
 .social-links {
-  margin: 25px 0;
   display: flex;
   flex-basis: 15%;
+  align-items: center;
 }
 .social-links .social-link {
   font-size: 30px;
@@ -54,9 +54,20 @@
   color: #1b1b1b;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 576px) {
   .main-header-container .main-header-sign-container {
     flex-basis: 100%;
+  }
+}
+@media (min-width: 577px) and (max-width: 992px) {
+  .main-header-container .main-header-sign-container {
+    flex-basis: 20%;
+    text-align: center;
+  }
+}
+@media (min-width: 993px) {
+  .main-header-container .main-header-sign-container {
+    text-align: center;
   }
 }
 nav {
@@ -98,6 +109,43 @@ nav ul .nav-item a:hover {
   .main-header-container .social-link {
     font-size: 21px;
     flex-basis: 20%;
+  }
+}
+@media (min-width: 400px) and (max-width: 576px) {
+  .main-header-container nav {
+    flex-basis: 70%;
+  }
+  .main-header-container .nav-item {
+    padding: 5px;
+  }
+  .main-header-container .social-links {
+    flex-basis: 20%;
+  }
+  .main-header-container .social-links .social-link {
+    font-size: 21px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .main-header-container nav {
+    flex-basis: 58%;
+  }
+  .main-header-container nav .nav-item {
+    padding: 15px;
+  }
+  .main-header-container .social-links {
+    flex-basis: 20%;
+  }
+  .main-header-container .social-links .social-link {
+    font-size: 25px;
+    margin: 0 15px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .main-header-container nav {
+    flex-basis: 58%;
+  }
+  .main-header-container nav .nav-item {
+    padding: 25px;
   }
 }
 .main-section .top-container .top-ewa, .main-section .top-container .top-galeria {
@@ -206,27 +254,58 @@ nav ul .nav-item a:hover {
   background-color: rgba(255, 255, 255, 0.8196078431);
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   top: 130px;
 }
-.olejne .olejne-container .olejne-text {
+.olejne .olejne-container header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+}
+.olejne .olejne-container header .olejne-text {
   margin-left: 250px;
   font-family: "Cinzel", serif;
   font-size: 20px;
   color: #FF7D69;
 }
 .olejne .btn-abstrakcje-olejne {
-  top: 180px;
-  left: 250px;
+  flex-basis: 100%;
+}
+.olejne .btn-abstrakcje-olejne button {
+  margin: 100px 0 50px 250px;
 }
 .olejne .btn-naturalistyczne {
-  top: 350px;
-  left: 15px;
+  flex-basis: 100%;
+}
+.olejne .btn-naturalistyczne button {
+  margin: 50px 0 0 250px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 490px) {
   .olejne .olejne-container {
     top: 210px;
+  }
+  .olejne .olejne-container header {
+    justify-content: center;
+  }
+  .olejne .olejne-container header .olejne-text {
+    margin: 0;
+  }
+  .olejne .btn-abstrakcje-olejne,
+  .olejne .btn-naturalistyczne {
+    display: flex;
+    justify-content: center;
+  }
+  .olejne .btn-abstrakcje-olejne button,
+  .olejne .btn-naturalistyczne button {
+    margin: 50px;
+  }
+}
+@media (min-width: 491px) and (max-width: 992px) {
+  .olejne .olejne-container {
+    top: 180px;
     justify-content: center;
   }
   .olejne .olejne-container .olejne-text {
@@ -237,8 +316,8 @@ nav ul .nav-item a:hover {
     left: 85px;
   }
   .olejne .btn-naturalistyczne {
-    top: 350px;
-    left: 85px;
+    top: 450px;
+    left: -150px;
   }
 }
 .contact .contact-container .picture, .szkice .szkice-container .szkice-picture .picture {
@@ -259,18 +338,11 @@ nav ul .nav-item a:hover {
   display: block;
   opacity: 1;
 }
-.szkice .szkice-text {
-  margin-top: 130px;
-  margin-left: 250px;
-  padding-bottom: 20px;
-  font-family: "Cinzel", serif;
-  color: #FF7D69;
-}
 .szkice .img-horizontal {
-  width: 600px;
+  width: 650px;
 }
 .szkice .img-vertical {
-  width: 400px;
+  width: 450px;
 }
 .szkice .szkice-text-2, .szkice .szkice-text-1 {
   text-align: center;
@@ -288,9 +360,25 @@ nav ul .nav-item a:hover {
 .szkice .szkice-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  margin-top: 130px;
 }
-@media (max-width: 400px) {
+.szkice .szkice-container header {
+  flex-basis: 80%;
+}
+.szkice .szkice-container header p {
+  font-family: "Cinzel", serif;
+  color: #FF7D69;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+@media (max-width: 440px) {
+  .szkice .szkice-container {
+    margin-top: 180px;
+  }
+  .szkice .szkice-container header p {
+    text-align: center;
+  }
   .szkice .img-horizontal {
     width: 300px;
   }
@@ -298,7 +386,18 @@ nav ul .nav-item a:hover {
     width: 300px;
   }
 }
-.akrylowe .btn-abstrakcje, .akrylowe .btn-mandale, .olejne .btn-abstrakcje-olejne, .olejne .btn-naturalistyczne {
+@media (min-width: 441px) and (max-width: 992px) {
+  .szkice .szkice-container {
+    margin-top: 180px;
+  }
+  .szkice .szkice-container .img-horizontal {
+    width: 450px;
+  }
+  .szkice .szkice-container .img-vertical {
+    width: 450px;
+  }
+}
+.akrylowe .btn-abstrakcje, .akrylowe .btn-mandale, .olejne .btn-abstrakcje-olejne button, .olejne .btn-naturalistyczne button {
   background-color: white;
   color: green;
   height: 120px;
@@ -309,13 +408,13 @@ nav ul .nav-item a:hover {
   font-size: 22px;
   transition: all 0.3s;
 }
-.akrylowe .btn-abstrakcje:hover, .akrylowe .btn-mandale:hover, .olejne .btn-abstrakcje-olejne:hover, .olejne .btn-naturalistyczne:hover {
+.akrylowe .btn-abstrakcje:hover, .akrylowe .btn-mandale:hover, .olejne .btn-abstrakcje-olejne button:hover, .olejne .btn-naturalistyczne button:hover {
   background-color: #8FC9D9;
 }
-.akrylowe .btn-abstrakcje:hover a, .akrylowe .btn-mandale:hover a, .olejne .btn-abstrakcje-olejne:hover a, .olejne .btn-naturalistyczne:hover a {
+.akrylowe .btn-abstrakcje:hover a, .akrylowe .btn-mandale:hover a, .olejne .btn-abstrakcje-olejne button:hover a, .olejne .btn-naturalistyczne button:hover a {
   color: white;
 }
-.akrylowe .btn-abstrakcje a, .akrylowe .btn-mandale a, .olejne .btn-abstrakcje-olejne a, .olejne .btn-naturalistyczne a {
+.akrylowe .btn-abstrakcje a, .akrylowe .btn-mandale a, .olejne .btn-abstrakcje-olejne button a, .olejne .btn-naturalistyczne button a {
   text-decoration: none;
 }
 
@@ -444,16 +543,11 @@ nav ul .nav-item a:hover {
   opacity: 1;
 }
 
-@media (min-width: 992px) {
-  .contact header {
-    display: block;
-    flex-basis: 100%;
-  }
-}
-@media (max-width: 400px) {
+@media (max-width: 992px) {
   .contact .contact-container {
-    top: 200px;
-    left: 35px;
+    top: 180px;
+    left: 5px;
+    justify-content: center;
   }
   .contact .contact-container header {
     flex-basis: 85%;
@@ -477,12 +571,38 @@ nav ul .nav-item a:hover {
   }
   .contact .contact-container address {
     top: 10px;
+    text-align: center;
   }
   .contact .contact-container address p {
-    margin-left: 50px;
+    margin: 0;
   }
   .contact .img-vertical {
     width: 300px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .contact .contact-container {
+    left: 35px;
+  }
+  .contact .contact-container header {
+    flex-basis: 100%;
+  }
+  .contact .contact-container .contact-text p {
+    padding: 5px;
+  }
+}
+@media (min-width: 1201px) {
+  .contact header {
+    flex-basis: 100%;
+  }
+  .contact .contact-sign img {
+    left: 550px;
+  }
+  .contact .contact-container .picture {
+    width: 515px;
+  }
+  .contact .contact-container .picture .img-vertical {
+    width: 500px;
   }
 }
 footer {
