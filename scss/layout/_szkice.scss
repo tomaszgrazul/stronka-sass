@@ -11,10 +11,14 @@
 .szkice {
     position: absolute;
     display: none;
+    transition: opacity 1s;
     opacity: 0;
 
     &.switch-szkice-on {
         display: block;
+    }
+
+    &.switch-szkice-opacity {
         opacity: 1;
     }
 

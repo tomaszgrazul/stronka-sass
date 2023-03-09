@@ -1,2 +1,1 @@
-1. opacity, prze³¹czanie
-2. Jak przesun¹æ image razem z linear-gradient?
+1. zamykanie obrazka

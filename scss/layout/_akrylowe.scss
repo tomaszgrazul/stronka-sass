@@ -35,7 +35,10 @@
     opacity: 0;
 
     &.switch-akrylowe-on {
-        display: block;
+        display: initial;
+    }
+
+    &.switch-akrylowe-opacity {
         opacity: 1;
     }
 
