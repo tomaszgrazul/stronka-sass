@@ -1,3 +1,12 @@
+document.getElementById('my-img').addEventListener('click', function(){
+    document.getElementById('my-modal').style.display = 'block';
+    document.getElementById('img-1').src = this.src;
+});
+
+document.getElementsByClassName('close')[0].addEventListener('click', function() { 
+    document.getElementById('my-modal').style.display = 'none';
+});
+
 document.getElementsByClassName('switch-main')[0].addEventListener('click', function(element) {
     element.preventDefault();
     document.getElementsByClassName('main-section')[0].classList.remove('switch-main-off');
