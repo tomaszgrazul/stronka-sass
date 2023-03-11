@@ -1,17 +1,20 @@
 var modal = document.querySelectorAll('#modal-img');
 
     for (var i = 0, j = modal.length; i < j; i++) {
+
         modal[i].addEventListener('click', function(){
-        document.getElementById('my-modal').style.display = 'block';
-        document.getElementById('img-1').src = this.src;
-    })
-};
+
+            document.getElementById('my-modal').style.display = 'block';
+            document.getElementById('img-1').src = this.src;
+        })
+    };
 
 document.getElementsByClassName('close')[0].addEventListener('click', function() { 
     document.getElementById('my-modal').style.display = 'none';
 });
 
 document.getElementsByClassName('switch-main')[0].addEventListener('click', function(element) {
+
     element.preventDefault();
     document.getElementsByClassName('main-section')[0].classList.remove('switch-main-off');
     document.getElementsByClassName('akrylowe')[0].classList.remove('switch-akrylowe-on');

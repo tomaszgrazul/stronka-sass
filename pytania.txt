@@ -1,1 +1,3 @@
-1. zamykanie obrazka
+1. Różnia między id a classs
+2. W js lepiej operowac na klasach czy dodawać style?
+3. szkice. Dopasowywanie wielkości do okna przeglądarki
