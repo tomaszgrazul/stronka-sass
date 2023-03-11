@@ -388,15 +388,23 @@ nav ul .nav-item a:hover {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
 }
-.szkice .szkice-container .szkice-picture .modal .close {
-  position: absolute;
-  right: 35px;
+.szkice .szkice-container .szkice-picture .modal .scale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.szkice .szkice-container .szkice-picture .modal .scale .close {
+  position: fixed;
+  top: 0px;
+  right: 10px;
   color: #f1f1f1;
   font-size: 30px;
   font-weight: bold;
   transition: 0.3s;
 }
-.szkice .szkice-container .szkice-picture .modal .close:hover {
+.szkice .szkice-container .szkice-picture .modal .scale .close:hover {
   color: #bbb;
   cursor: pointer;
 }
@@ -404,6 +412,7 @@ nav ul .nav-item a:hover {
   padding: 30px;
   display: block;
   max-width: 100%;
+  max-height: 100%;
 }
 
 @media (max-width: 440px) {
