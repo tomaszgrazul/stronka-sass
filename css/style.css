@@ -1,3 +1,121 @@
+.akrylowe .btn-abstrakcje button, .akrylowe .btn-mandale button, .olejne .btn-naturalistyczne button, .olejne .btn-abstrakcje-olejne button {
+  background-color: white;
+  color: green;
+  height: 120px;
+  width: 230px;
+  position: relative;
+  transition: all 0.3s;
+  font-family: "Cinzel", serif;
+  font-size: 22px;
+}
+.akrylowe .btn-abstrakcje button:hover, .akrylowe .btn-mandale button:hover, .olejne .btn-naturalistyczne button:hover, .olejne .btn-abstrakcje-olejne button:hover {
+  background-color: #8FC9D9;
+  transition: all 0.5s;
+}
+.akrylowe .btn-abstrakcje button:hover a, .akrylowe .btn-mandale button:hover a, .olejne .btn-naturalistyczne button:hover a, .olejne .btn-abstrakcje-olejne button:hover a {
+  color: white;
+  cursor: pointer;
+}
+.akrylowe .btn-abstrakcje button a, .akrylowe .btn-mandale button a, .olejne .btn-naturalistyczne button a, .olejne .btn-abstrakcje-olejne button a {
+  text-decoration: none;
+}
+
+.szkice .close-szkice, .mandale .close-mandale {
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  color: #f1f1f1;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.szkice .close-szkice:hover, .mandale .close-mandale:hover {
+  color: #bbb;
+  cursor: pointer;
+}
+
+.szkice, .mandale {
+  position: absolute;
+  display: none;
+  transition: opacity 1s;
+  opacity: 0;
+}
+.switch-gallery-on.szkice, .switch-gallery-on.mandale {
+  display: block;
+}
+.switch-gallery-opacity.szkice, .switch-gallery-opacity.mandale {
+  opacity: 1;
+}
+.szkice .img-horizontal, .mandale .img-horizontal {
+  width: 500px;
+}
+.szkice .img-vertical, .mandale .img-vertical {
+  width: 450px;
+}
+.szkice .gallery-text-1, .mandale .gallery-text-1 {
+  text-align: center;
+  padding: 5px;
+  font-family: "Cinzel", serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.szkice .gallery-text-2, .mandale .gallery-text-2 {
+  text-align: center;
+  padding: 5px;
+  font-family: "Cinzel", serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.szkice .gallery-container, .mandale .gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 130px;
+}
+.szkice .gallery-container header, .mandale .gallery-container header {
+  flex-basis: 80%;
+}
+.szkice .gallery-container header p, .mandale .gallery-container header p {
+  font-family: "Cinzel", serif;
+  color: #FF7D69;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.szkice .gallery-container .gallery-picture .picture, .mandale .gallery-container .gallery-picture .picture {
+  border: 8px double rgb(242, 239, 239);
+  box-shadow: 0 0 10px rgb(150, 150, 150);
+  transition: opacity 0.5s;
+}
+.szkice .gallery-container .gallery-picture .picture:hover, .mandale .gallery-container .gallery-picture .picture:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.szkice .gallery-container .gallery-picture .modal, .mandale .gallery-container .gallery-picture .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.szkice .gallery-container .gallery-picture .modal .scale, .mandale .gallery-container .gallery-picture .modal .scale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.szkice .gallery-container .gallery-picture .modal .scale .modal-content, .mandale .gallery-container .gallery-picture .modal .scale .modal-content {
+  padding: 30px;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -192,8 +310,6 @@ nav ul .nav-item a:hover {
 }
 .main-section .bottom-container p {
   padding-bottom: 5px;
-}
-.main-section .bottom-container a {
   padding: 10px;
   transition: all 0.3s;
   font-family: "Cinzel", serif;
@@ -201,11 +317,12 @@ nav ul .nav-item a:hover {
   color: aliceblue;
   text-decoration: none;
 }
-.main-section .bottom-container a:hover {
+.main-section .bottom-container p:hover {
   color: pink;
+  cursor: pointer;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   .main-section {
     background-position: center;
   }
@@ -232,101 +349,6 @@ nav ul .nav-item a:hover {
     padding: 0;
   }
 }
-.szkice .close-szkice, .mandale .close-mandale {
-  position: fixed;
-  top: 0px;
-  right: 10px;
-  color: #f1f1f1;
-  font-size: 30px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-.szkice .close-szkice:hover, .mandale .close-mandale:hover {
-  color: #bbb;
-  cursor: pointer;
-}
-
-.contact .contact-container .picture, .szkice .gallery-container .gallery-picture .picture, .mandale .gallery-container .gallery-picture .picture {
-  border: 8px double rgb(242, 239, 239);
-  box-shadow: 0 0 10px rgb(150, 150, 150);
-  transition: opacity 0.5s;
-}
-.contact .contact-container .picture:hover, .szkice .gallery-container .gallery-picture .picture:hover, .mandale .gallery-container .gallery-picture .picture:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-.szkice, .mandale {
-  position: absolute;
-  display: none;
-  transition: opacity 1s;
-  opacity: 0;
-}
-.switch-gallery-on.szkice, .switch-gallery-on.mandale {
-  display: block;
-}
-.switch-gallery-opacity.szkice, .switch-gallery-opacity.mandale {
-  opacity: 1;
-}
-.szkice .img-horizontal, .mandale .img-horizontal {
-  width: 500px;
-}
-.szkice .img-vertical, .mandale .img-vertical {
-  width: 300px;
-}
-.szkice .gallery-text-2, .mandale .gallery-text-2, .szkice .gallery-text-1, .mandale .gallery-text-1 {
-  text-align: center;
-  padding: 5px;
-  font-family: "Cinzel", serif;
-  font-size: 16px;
-}
-.szkice .gallery-text-1, .mandale .gallery-text-1 {
-  font-weight: 600;
-}
-.szkice .gallery-text-2, .mandale .gallery-text-2 {
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-.szkice .gallery-container, .mandale .gallery-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 130px;
-}
-.szkice .gallery-container header, .mandale .gallery-container header {
-  flex-basis: 80%;
-}
-.szkice .gallery-container header p, .mandale .gallery-container header p {
-  font-family: "Cinzel", serif;
-  color: #FF7D69;
-  font-size: 20px;
-  padding-bottom: 10px;
-}
-.szkice .gallery-container .gallery-picture .modal, .mandale .gallery-container .gallery-picture .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-.szkice .gallery-container .gallery-picture .modal .scale, .mandale .gallery-container .gallery-picture .modal .scale {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-.szkice .gallery-container .gallery-picture .modal .scale .modal-content, .mandale .gallery-container .gallery-picture .modal .scale .modal-content {
-  padding: 30px;
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-}
-
 @media (max-width: 440px) {
   .mandale .gallery-container {
     margin-top: 180px;
@@ -439,12 +461,12 @@ nav ul .nav-item a:hover {
     left: -150px;
   }
 }
-.contact .contact-container .picture, .szkice .gallery-container .gallery-picture .picture, .mandale .gallery-container .gallery-picture .picture {
+.contact .contact-container .picture {
   border: 8px double rgb(242, 239, 239);
   box-shadow: 0 0 10px rgb(150, 150, 150);
   transition: opacity 0.5s;
 }
-.contact .contact-container .picture:hover, .szkice .gallery-container .gallery-picture .picture:hover, .mandale .gallery-container .gallery-picture .picture:hover {
+.contact .contact-container .picture:hover {
   opacity: 0.5;
 }
 
@@ -470,30 +492,9 @@ nav ul .nav-item a:hover {
     width: 450px;
   }
   .szkice .gallery-container .img-vertical {
-    width: 450px;
+    width: 380px;
   }
 }
-.akrylowe .btn-abstrakcje, .akrylowe .btn-mandale, .olejne .btn-abstrakcje-olejne button, .olejne .btn-naturalistyczne button {
-  background-color: white;
-  color: green;
-  height: 120px;
-  width: 230px;
-  position: relative;
-  transition: all 0.3s;
-  font-family: "Cinzel", serif;
-  font-size: 22px;
-  transition: all 0.3s;
-}
-.akrylowe .btn-abstrakcje:hover, .akrylowe .btn-mandale:hover, .olejne .btn-abstrakcje-olejne button:hover, .olejne .btn-naturalistyczne button:hover {
-  background-color: #8FC9D9;
-}
-.akrylowe .btn-abstrakcje:hover a, .akrylowe .btn-mandale:hover a, .olejne .btn-abstrakcje-olejne button:hover a, .olejne .btn-naturalistyczne button:hover a {
-  color: white;
-}
-.akrylowe .btn-abstrakcje a, .akrylowe .btn-mandale a, .olejne .btn-abstrakcje-olejne button a, .olejne .btn-naturalistyczne button a {
-  text-decoration: none;
-}
-
 .akrylowe {
   height: 100vh;
   width: 100%;
@@ -535,12 +536,16 @@ nav ul .nav-item a:hover {
   color: #FF7D69;
 }
 .akrylowe .btn-mandale {
-  top: 180px;
-  left: 250px;
+  flex-basis: 100%;
+}
+.akrylowe .btn-mandale button {
+  margin: 100px 0 50px 250px;
 }
 .akrylowe .btn-abstrakcje {
-  top: 350px;
-  left: 15px;
+  flex-basis: 100%;
+}
+.akrylowe .btn-abstrakcje button {
+  margin: 50px 0 0 250px;
 }
 
 @media (max-width: 490px) {

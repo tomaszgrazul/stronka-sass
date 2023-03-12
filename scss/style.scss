@@ -1,5 +1,6 @@
 @import 'utils/variables';
 @import 'utils/mixins';
+@import 'utils/extend';
 
 // @import 'base/normalize';
 @import 'base/global';
@@ -7,7 +8,6 @@
 @import 'layout/main_header';
 @import 'layout/nav';
 @import 'layout/main_section';
-@import 'layout/gallery';
 @import 'layout/mandale';
 @import 'layout/olejne';
 @import 'layout/szkice';

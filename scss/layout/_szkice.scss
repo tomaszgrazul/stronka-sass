@@ -1,19 +1,9 @@
-%frame {
-    border: 8px double rgb(242, 239, 239);
-    box-shadow: 0 0 10px rgb(150, 150, 150);
-    transition: opacity .5s;
-
-    &:hover {
-        opacity: 0.5;
-    }
-}
-
 .szkice {
    @extend %gallery;
 
    .close-szkice {
         @extend %close;
-}
+    }
 }
 
 @media (max-width: 440px) {
@@ -48,7 +38,7 @@
             }
     
             .img-vertical {
-            width: 450px;
+            width: 380px;
             } 
         }
     }

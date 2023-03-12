@@ -1,3 +1,4 @@
 1. Różnia między id a classs
 2. W js lepiej operowac na klasach czy dodawać style?
-3. szkice. Dopasowywanie wielkości do okna przeglądarki
+3. Nav. Dlaczego nie widać pointera?
+4. Mandale. 3 w @media 440 źle się ustawia.s

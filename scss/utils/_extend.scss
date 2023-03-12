@@ -1,3 +1,28 @@
+%btn-main {
+    background-color: white;
+    color: green;
+    height: 120px;
+    width: 230px;
+    position: relative;
+    transition: all 0.3s;
+    font-family: $third-font;
+    font-size: 22px;
+
+    &:hover {
+        background-color: #8FC9D9;
+        transition: all .5s;
+
+        a {
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
 %close{
     position: fixed;
     top: 0px;
@@ -9,17 +34,6 @@
 
     &:hover {
         color: #bbb;
-        cursor: pointer;
-    }
-}
-
-%frame {
-    border: 8px double rgb(242, 239, 239);
-    box-shadow: 0 0 10px rgb(150, 150, 150);
-    transition: opacity .5s;
-
-    &:hover {
-        opacity: 0.5;
         cursor: pointer;
     }
 }
@@ -43,23 +57,22 @@
     }
 
     .img-vertical {
-        width: 300px;
+        width: 450px;
     }
 
-    %szkice-text {
+    .gallery-text-1 {
         text-align: center;
         padding: 5px;
         font-family: $third-font;
         font-size: 16px;
-    }
-
-    .gallery-text-1 {
-        @extend %szkice-text;
         font-weight: 600;
     }
 
     .gallery-text-2 {
-        @extend %szkice-text;
+        text-align: center;
+        padding: 5px;
+        font-family: $third-font;
+        font-size: 16px;
         font-weight: 400;
         margin-bottom: 20px;
     }
@@ -84,7 +97,14 @@
         .gallery-picture {
         
             .picture {
-                @extend %frame;
+                border: 8px double rgb(242, 239, 239);
+                box-shadow: 0 0 10px rgb(150, 150, 150);
+                transition: opacity .5s;
+            
+                &:hover {
+                    opacity: 0.5;
+                    cursor: pointer;
+                }
             }
 
             .modal {
