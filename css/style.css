@@ -232,6 +232,123 @@ nav ul .nav-item a:hover {
     padding: 0;
   }
 }
+.szkice .close-szkice, .mandale .close-mandale {
+  position: fixed;
+  top: 0px;
+  right: 10px;
+  color: #f1f1f1;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.szkice .close-szkice:hover, .mandale .close-mandale:hover {
+  color: #bbb;
+  cursor: pointer;
+}
+
+.contact .contact-container .picture, .szkice .gallery-container .gallery-picture .picture, .mandale .gallery-container .gallery-picture .picture {
+  border: 8px double rgb(242, 239, 239);
+  box-shadow: 0 0 10px rgb(150, 150, 150);
+  transition: opacity 0.5s;
+}
+.contact .contact-container .picture:hover, .szkice .gallery-container .gallery-picture .picture:hover, .mandale .gallery-container .gallery-picture .picture:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.szkice, .mandale {
+  position: absolute;
+  display: none;
+  transition: opacity 1s;
+  opacity: 0;
+}
+.switch-gallery-on.szkice, .switch-gallery-on.mandale {
+  display: block;
+}
+.switch-gallery-opacity.szkice, .switch-gallery-opacity.mandale {
+  opacity: 1;
+}
+.szkice .img-horizontal, .mandale .img-horizontal {
+  width: 500px;
+}
+.szkice .img-vertical, .mandale .img-vertical {
+  width: 300px;
+}
+.szkice .gallery-text-2, .mandale .gallery-text-2, .szkice .gallery-text-1, .mandale .gallery-text-1 {
+  text-align: center;
+  padding: 5px;
+  font-family: "Cinzel", serif;
+  font-size: 16px;
+}
+.szkice .gallery-text-1, .mandale .gallery-text-1 {
+  font-weight: 600;
+}
+.szkice .gallery-text-2, .mandale .gallery-text-2 {
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.szkice .gallery-container, .mandale .gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 130px;
+}
+.szkice .gallery-container header, .mandale .gallery-container header {
+  flex-basis: 80%;
+}
+.szkice .gallery-container header p, .mandale .gallery-container header p {
+  font-family: "Cinzel", serif;
+  color: #FF7D69;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.szkice .gallery-container .gallery-picture .modal, .mandale .gallery-container .gallery-picture .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.szkice .gallery-container .gallery-picture .modal .scale, .mandale .gallery-container .gallery-picture .modal .scale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.szkice .gallery-container .gallery-picture .modal .scale .modal-content, .mandale .gallery-container .gallery-picture .modal .scale .modal-content {
+  padding: 30px;
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media (max-width: 440px) {
+  .mandale .gallery-container {
+    margin-top: 180px;
+  }
+  .mandale .gallery-container header p {
+    text-align: center;
+  }
+  .mandale .gallery-container .img-horizontal {
+    width: 300px;
+  }
+}
+@media (min-width: 441px) and (max-width: 992px) {
+  .mandale .gallery-container {
+    margin-top: 180px;
+  }
+  .mandale .gallery-container header p {
+    text-align: center;
+  }
+  .mandale .gallery-container .img-horizontal {
+    width: 400px;
+  }
+}
 .olejne {
   height: 100vh;
   width: 100%;
@@ -322,104 +439,20 @@ nav ul .nav-item a:hover {
     left: -150px;
   }
 }
-.contact .contact-container .picture, .szkice .szkice-container .szkice-picture .picture {
+.contact .contact-container .picture, .szkice .gallery-container .gallery-picture .picture, .mandale .gallery-container .gallery-picture .picture {
   border: 8px double rgb(242, 239, 239);
   box-shadow: 0 0 10px rgb(150, 150, 150);
   transition: opacity 0.5s;
 }
-.contact .contact-container .picture:hover, .szkice .szkice-container .szkice-picture .picture:hover {
+.contact .contact-container .picture:hover, .szkice .gallery-container .gallery-picture .picture:hover, .mandale .gallery-container .gallery-picture .picture:hover {
   opacity: 0.5;
 }
 
-.szkice {
-  position: absolute;
-  display: none;
-  transition: opacity 1s;
-  opacity: 0;
-}
-.szkice.switch-szkice-on {
-  display: block;
-}
-.szkice.switch-szkice-opacity {
-  opacity: 1;
-}
-.szkice .img-horizontal {
-  width: 500px;
-}
-.szkice .img-vertical {
-  width: 300px;
-}
-.szkice .szkice-text-2, .szkice .szkice-text-1 {
-  text-align: center;
-  padding: 5px;
-  font-family: "Cinzel", serif;
-  font-size: 16px;
-}
-.szkice .szkice-text-1 {
-  font-weight: 600;
-}
-.szkice .szkice-text-2 {
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-.szkice .szkice-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-top: 130px;
-}
-.szkice .szkice-container header {
-  flex-basis: 80%;
-}
-.szkice .szkice-container header p {
-  font-family: "Cinzel", serif;
-  color: #FF7D69;
-  font-size: 20px;
-  padding-bottom: 10px;
-}
-.szkice .szkice-container .szkice-picture .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-.szkice .szkice-container .szkice-picture .modal .scale {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-.szkice .szkice-container .szkice-picture .modal .scale .close {
-  position: fixed;
-  top: 0px;
-  right: 10px;
-  color: #f1f1f1;
-  font-size: 30px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-.szkice .szkice-container .szkice-picture .modal .scale .close:hover {
-  color: #bbb;
-  cursor: pointer;
-}
-.szkice .szkice-container .szkice-picture .modal .scale .modal-content {
-  padding: 30px;
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-}
-
 @media (max-width: 440px) {
-  .szkice .szkice-container {
+  .szkice .gallery-container {
     margin-top: 180px;
   }
-  .szkice .szkice-container header p {
+  .szkice .gallery-container header p {
     text-align: center;
   }
   .szkice .img-horizontal {
@@ -430,13 +463,13 @@ nav ul .nav-item a:hover {
   }
 }
 @media (min-width: 441px) and (max-width: 1200px) {
-  .szkice .szkice-container {
+  .szkice .gallery-container {
     margin-top: 180px;
   }
-  .szkice .szkice-container .img-horizontal {
+  .szkice .gallery-container .img-horizontal {
     width: 450px;
   }
-  .szkice .szkice-container .img-vertical {
+  .szkice .gallery-container .img-vertical {
     width: 450px;
   }
 }
@@ -485,10 +518,17 @@ nav ul .nav-item a:hover {
   background-color: rgba(255, 255, 255, 0.8196078431);
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   top: 130px;
 }
-.akrylowe .akrylowe-container .akrylowe-text {
+.akrylowe .akrylowe-container header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+}
+.akrylowe .akrylowe-container header .akrylowe-text {
   margin-left: 250px;
   font-family: "Cinzel", serif;
   font-size: 20px;
@@ -503,9 +543,29 @@ nav ul .nav-item a:hover {
   left: 15px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 490px) {
   .akrylowe .akrylowe-container {
     top: 210px;
+  }
+  .akrylowe .akrylowe-container header {
+    justify-content: center;
+  }
+  .akrylowe .akrylowe-container header .akrylowe-text {
+    margin: 0;
+  }
+  .akrylowe .btn-mandale,
+  .akrylowe .btn-abstrakcje {
+    display: flex;
+    justify-content: center;
+  }
+  .akrylowe .btn-mandale button,
+  .akrylowe .btn-abstrakcje button {
+    margin: 50px;
+  }
+}
+@media (min-width: 491px) and (max-width: 992px) {
+  .akrylowe .akrylowe-container {
+    top: 180px;
     justify-content: center;
   }
   .akrylowe .akrylowe-container .akrylowe-text {
@@ -516,8 +576,8 @@ nav ul .nav-item a:hover {
     left: 85px;
   }
   .akrylowe .btn-abstrakcje {
-    top: 350px;
-    left: 85px;
+    top: 450px;
+    left: -150px;
   }
 }
 .contact {

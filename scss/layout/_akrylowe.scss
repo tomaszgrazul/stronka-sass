@@ -48,14 +48,23 @@
         background-color: #ffffffd1;
         position: relative;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         top: 130px;
 
-        .akrylowe-text {
-            margin-left: 250px;
-            font-family: $third-font;
-            font-size: 20px;
-            color: $secondary-font-color
+        header {
+            height: 50px;
+            display: flex;
+            align-items: center;
+            flex-basis: 100%;
+
+
+            .akrylowe-text {
+                margin-left: 250px;
+                font-family: $third-font;
+                font-size: 20px;
+                color: $secondary-font-color
+            }
         }
     }
 
@@ -72,11 +81,39 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 490px) {
     .akrylowe {
 
         .akrylowe-container {
             top: 210px;
+
+            header {
+                justify-content: center;
+
+                .akrylowe-text {
+                    margin: 0;
+                }
+            }
+
+        }
+    
+        .btn-mandale,
+        .btn-abstrakcje {
+            display: flex;
+            justify-content: center;
+
+            button {
+                margin: 50px;
+            }
+        }
+    }
+} 
+
+@media (min-width: 491px) and (max-width: 992px) {
+    .akrylowe {
+
+        .akrylowe-container {
+            top: 180px;
             justify-content: center;
 
             .akrylowe-text {
@@ -90,8 +127,8 @@
         }
         
         .btn-abstrakcje {
-            top: 350px;
-            left: 85px;
+            top: 450px;
+            left: -150px;
         }
     }
 } 

@@ -1,0 +1,45 @@
+.mandale {
+    @extend %gallery;
+
+    .close-mandale {
+        @extend %close;
+    }
+}
+
+@media (max-width: 440px) {
+    .mandale {
+
+        .gallery-container {
+            margin-top: 180px;
+
+            header {
+                p {
+                   text-align: center; 
+                }
+            }
+
+            .img-horizontal {
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media (min-width: 441px) and (max-width: 992px) {
+    .mandale {
+
+        .gallery-container {
+            margin-top: 180px;
+
+            header {
+                p {
+                   text-align: center; 
+                }
+            }
+
+            .img-horizontal {
+                width: 400px;
+            }
+        }
+    }
+}
