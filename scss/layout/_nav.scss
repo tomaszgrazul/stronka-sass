@@ -33,13 +33,13 @@ nav {
     .main-header-container {
         nav {
             flex-basis: 60%;
-        }
-    
-        .nav-item {
-            padding: 5px;
 
-            a {
-                font-size: 18px;
+            .nav-item {
+                padding: 5px;
+    
+                a {
+                    font-size: 18px;
+                }
             }
         }
     
@@ -54,10 +54,10 @@ nav {
     .main-header-container {
         nav {
             flex-basis: 70%;
-        }
-    
-        .nav-item {
-            padding: 5px;
+
+            .nav-item {
+                padding: 5px;
+            }
         }
     
         .social-links {

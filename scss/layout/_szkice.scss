@@ -4,6 +4,19 @@
    .close-szkice {
         @extend %close;
     }
+
+    .gallery-picture {
+        flex-basis: 35%;
+
+
+        .picture-horizontal {
+            width: 650px;
+        }
+
+        .picture-vertical {
+            width: 350px;
+        }
+    }
 }
 
 @media (max-width: 440px) {
@@ -18,12 +31,16 @@
             }
         }
 
-        .img-horizontal {
-            width: 300px;
-        }
-    
-        .img-vertical {
-            width: 300px;
+        .gallery-picture {
+            flex-basis: 35%;
+
+            .picture-horizontal {
+                width: 300px;
+            }
+        
+            .picture-vertical {
+                width: 300px;
+            }
         }
     }
 }
@@ -33,13 +50,17 @@
         .gallery-container {
             margin-top: 180px;
 
-            .img-horizontal {
-            width: 450px;
+            .gallery-picture {
+                flex-basis: 55%;
+
+                .picture-horizontal {
+                    width: 450px;
+                }
+        
+                .picture-vertical {
+                    width: 380px;
+                } 
             }
-    
-            .img-vertical {
-            width: 380px;
-            } 
         }
     }
 }

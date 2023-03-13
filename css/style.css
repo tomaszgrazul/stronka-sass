@@ -20,7 +20,7 @@
   text-decoration: none;
 }
 
-.szkice .close-szkice, .mandale .close-mandale {
+.szkice .close-szkice, .olejne-abstrakcje .close-olejne-abstrakcje, .mandale .close-mandale {
   position: fixed;
   top: 0px;
   right: 10px;
@@ -29,37 +29,50 @@
   font-weight: bold;
   transition: 0.3s;
 }
-.szkice .close-szkice:hover, .mandale .close-mandale:hover {
+.szkice .close-szkice:hover, .olejne-abstrakcje .close-olejne-abstrakcje:hover, .mandale .close-mandale:hover {
   color: #bbb;
   cursor: pointer;
 }
 
-.szkice, .mandale {
+.contact .contact-container .picture, .szkice .gallery-container .gallery-picture .picture-horizontal, .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal, .mandale .gallery-container .gallery-picture .picture-horizontal,
+.szkice .gallery-container .gallery-picture .picture-vertical,
+.olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical,
+.mandale .gallery-container .gallery-picture .picture-vertical {
+  border: 8px double rgb(242, 239, 239);
+  box-shadow: 0 0 10px rgb(150, 150, 150);
+  transition: opacity 0.5s;
+}
+.contact .contact-container .picture:hover, .szkice .gallery-container .gallery-picture .picture-horizontal:hover, .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal:hover, .mandale .gallery-container .gallery-picture .picture-horizontal:hover,
+.szkice .gallery-container .gallery-picture .picture-vertical:hover,
+.olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical:hover,
+.mandale .gallery-container .gallery-picture .picture-vertical:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.szkice, .olejne-abstrakcje, .mandale {
   position: absolute;
   display: none;
   transition: opacity 1s;
   opacity: 0;
 }
-.switch-gallery-on.szkice, .switch-gallery-on.mandale {
+.switch-gallery-on.szkice, .switch-gallery-on.olejne-abstrakcje, .switch-gallery-on.mandale {
   display: block;
 }
-.switch-gallery-opacity.szkice, .switch-gallery-opacity.mandale {
+.switch-gallery-opacity.szkice, .switch-gallery-opacity.olejne-abstrakcje, .switch-gallery-opacity.mandale {
   opacity: 1;
 }
-.szkice .img-horizontal, .mandale .img-horizontal {
-  width: 500px;
+.szkice img, .olejne-abstrakcje img, .mandale img {
+  width: 100%;
 }
-.szkice .img-vertical, .mandale .img-vertical {
-  width: 450px;
-}
-.szkice .gallery-text-1, .mandale .gallery-text-1 {
+.szkice .gallery-text-1, .olejne-abstrakcje .gallery-text-1, .mandale .gallery-text-1 {
   text-align: center;
   padding: 5px;
   font-family: "Cinzel", serif;
   font-size: 16px;
   font-weight: 600;
 }
-.szkice .gallery-text-2, .mandale .gallery-text-2 {
+.szkice .gallery-text-2, .olejne-abstrakcje .gallery-text-2, .mandale .gallery-text-2 {
   text-align: center;
   padding: 5px;
   font-family: "Cinzel", serif;
@@ -67,31 +80,27 @@
   font-weight: 400;
   margin-bottom: 20px;
 }
-.szkice .gallery-container, .mandale .gallery-container {
+.szkice .gallery-container, .olejne-abstrakcje .gallery-container, .mandale .gallery-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 130px;
 }
-.szkice .gallery-container header, .mandale .gallery-container header {
+.szkice .gallery-container header, .olejne-abstrakcje .gallery-container header, .mandale .gallery-container header {
   flex-basis: 80%;
 }
-.szkice .gallery-container header p, .mandale .gallery-container header p {
+.szkice .gallery-container header p, .olejne-abstrakcje .gallery-container header p, .mandale .gallery-container header p {
   font-family: "Cinzel", serif;
   color: #FF7D69;
   font-size: 20px;
   padding-bottom: 10px;
 }
-.szkice .gallery-container .gallery-picture .picture, .mandale .gallery-container .gallery-picture .picture {
-  border: 8px double rgb(242, 239, 239);
-  box-shadow: 0 0 10px rgb(150, 150, 150);
-  transition: opacity 0.5s;
+.szkice .gallery-container .gallery-picture, .olejne-abstrakcje .gallery-container .gallery-picture, .mandale .gallery-container .gallery-picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.szkice .gallery-container .gallery-picture .picture:hover, .mandale .gallery-container .gallery-picture .picture:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-.szkice .gallery-container .gallery-picture .modal, .mandale .gallery-container .gallery-picture .modal {
+.szkice .gallery-container .gallery-picture .modal, .olejne-abstrakcje .gallery-container .gallery-picture .modal, .mandale .gallery-container .gallery-picture .modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -102,18 +111,18 @@
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
 }
-.szkice .gallery-container .gallery-picture .modal .scale, .mandale .gallery-container .gallery-picture .modal .scale {
+.szkice .gallery-container .gallery-picture .modal .scale, .olejne-abstrakcje .gallery-container .gallery-picture .modal .scale, .mandale .gallery-container .gallery-picture .modal .scale {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: auto;
 }
-.szkice .gallery-container .gallery-picture .modal .scale .modal-content, .mandale .gallery-container .gallery-picture .modal .scale .modal-content {
+.szkice .gallery-container .gallery-picture .modal .scale .modal-content, .olejne-abstrakcje .gallery-container .gallery-picture .modal .scale .modal-content, .mandale .gallery-container .gallery-picture .modal .scale .modal-content {
   padding: 30px;
   display: block;
-  max-width: 100%;
-  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 * {
@@ -212,16 +221,17 @@ nav ul .nav-item a {
 }
 nav ul .nav-item a:hover {
   color: pink;
+  cursor: pointer;
 }
 
 @media (max-width: 400px) {
   .main-header-container nav {
     flex-basis: 60%;
   }
-  .main-header-container .nav-item {
+  .main-header-container nav .nav-item {
     padding: 5px;
   }
-  .main-header-container .nav-item a {
+  .main-header-container nav .nav-item a {
     font-size: 18px;
   }
   .main-header-container .social-link {
@@ -233,7 +243,7 @@ nav ul .nav-item a:hover {
   .main-header-container nav {
     flex-basis: 70%;
   }
-  .main-header-container .nav-item {
+  .main-header-container nav .nav-item {
     padding: 5px;
   }
   .main-header-container .social-links {
@@ -339,16 +349,20 @@ nav ul .nav-item a:hover {
   }
   .main-section .bottom-container {
     margin-left: 70px;
-    top: 270px;
+    top: 380px;
   }
   .main-section .bottom-container p {
     padding: 5px;
-  }
-  .main-section .bottom-container p a {
-    font-size: 18px;
-    padding: 0;
+    font-size: 20px;
   }
 }
+.mandale .gallery-picture {
+  flex-basis: 33%;
+}
+.mandale .gallery-picture .picture-horizontal {
+  width: 400px;
+}
+
 @media (max-width: 440px) {
   .mandale .gallery-container {
     margin-top: 180px;
@@ -356,18 +370,24 @@ nav ul .nav-item a:hover {
   .mandale .gallery-container header p {
     text-align: center;
   }
-  .mandale .gallery-container .img-horizontal {
+  .mandale .gallery-container .gallery-picture {
+    flex-basis: 33%;
+  }
+  .mandale .gallery-container .gallery-picture .picture-horizontal {
     width: 300px;
   }
 }
-@media (min-width: 441px) and (max-width: 992px) {
+@media (min-width: 441px) and (max-width: 1200px) {
   .mandale .gallery-container {
     margin-top: 180px;
   }
   .mandale .gallery-container header p {
     text-align: center;
   }
-  .mandale .gallery-container .img-horizontal {
+  .mandale .gallery-container .gallery-picture {
+    flex-basis: 50%;
+  }
+  .mandale .gallery-container .gallery-picture .picture-horizontal {
     width: 400px;
   }
 }
@@ -461,13 +481,58 @@ nav ul .nav-item a:hover {
     left: -150px;
   }
 }
-.contact .contact-container .picture {
-  border: 8px double rgb(242, 239, 239);
-  box-shadow: 0 0 10px rgb(150, 150, 150);
-  transition: opacity 0.5s;
+.olejne-abstrakcje .gallery-picture {
+  flex-basis: 33%;
 }
-.contact .contact-container .picture:hover {
-  opacity: 0.5;
+.olejne-abstrakcje .gallery-picture .picture-horizontal {
+  width: 400px;
+}
+.olejne-abstrakcje .gallery-picture .picture-vertical {
+  width: 300px;
+}
+.olejne-abstrakcje .gallery-text-3 {
+  margin: 0;
+}
+
+@media (max-width: 440px) {
+  .olejne-abstrakcje .gallery-container {
+    margin-top: 180px;
+  }
+  .olejne-abstrakcje .gallery-container header p {
+    text-align: center;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal {
+    width: 300px;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical {
+    width: 300px;
+  }
+}
+@media (min-width: 441px) and (max-width: 992px) {
+  .olejne-abstrakcje .gallery-container {
+    margin-top: 180px;
+  }
+  .olejne-abstrakcje .gallery-container header p {
+    text-align: center;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture {
+    flex-basis: 50%;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal {
+    width: 400px;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical {
+    width: 380px;
+  }
+}
+.szkice .gallery-picture {
+  flex-basis: 35%;
+}
+.szkice .gallery-picture .picture-horizontal {
+  width: 650px;
+}
+.szkice .gallery-picture .picture-vertical {
+  width: 350px;
 }
 
 @media (max-width: 440px) {
@@ -477,10 +542,13 @@ nav ul .nav-item a:hover {
   .szkice .gallery-container header p {
     text-align: center;
   }
-  .szkice .img-horizontal {
+  .szkice .gallery-picture {
+    flex-basis: 35%;
+  }
+  .szkice .gallery-picture .picture-horizontal {
     width: 300px;
   }
-  .szkice .img-vertical {
+  .szkice .gallery-picture .picture-vertical {
     width: 300px;
   }
 }
@@ -488,10 +556,13 @@ nav ul .nav-item a:hover {
   .szkice .gallery-container {
     margin-top: 180px;
   }
-  .szkice .gallery-container .img-horizontal {
+  .szkice .gallery-container .gallery-picture {
+    flex-basis: 55%;
+  }
+  .szkice .gallery-container .gallery-picture .picture-horizontal {
     width: 450px;
   }
-  .szkice .gallery-container .img-vertical {
+  .szkice .gallery-container .gallery-picture .picture-vertical {
     width: 380px;
   }
 }
