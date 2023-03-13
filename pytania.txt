@@ -1,2 +1,4 @@
 ﻿1. Różnia między id a classs
 2. W js lepiej operowac na klasach czy dodawać style?
+3. Poprawić skalowanie obrazka w modal
+4. Czy w js potrzeba ciagle wyłączać klasy

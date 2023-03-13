@@ -1,0 +1,61 @@
+.akrylowe-abstrakcje {
+    @extend %gallery;
+
+    .close-akrylowe-abstrakcje {
+        @extend %close;
+    }
+
+    .gallery-picture {
+        flex-basis: 33%;
+
+        .picture-horizontal {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .akrylowe-abstrakcje {
+
+        .gallery-container {
+            margin-top: 180px;
+
+            header {
+                p {
+                   text-align: center; 
+                }
+            }
+
+            .gallery-picture {
+                flex-basis: 33%;
+        
+                .picture-horizontal {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 441px) and (max-width: 1200px) {
+    .akrylowe-abstrakcje {
+
+        .gallery-container {
+            margin-top: 180px;
+
+            header {
+                p {
+                   text-align: center; 
+                }
+            }
+
+            .gallery-picture {
+                flex-basis: 50%;
+        
+                .picture-horizontal {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}

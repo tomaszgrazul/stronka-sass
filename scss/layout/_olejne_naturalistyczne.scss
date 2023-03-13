@@ -1,0 +1,77 @@
+.olejne-naturalistyczne {
+    @extend %gallery;
+
+    .close-olejne-naturalistyczne {
+        @extend %close;
+    }
+
+    .gallery-picture {
+        flex-basis: 33%;
+
+        .picture-horizontal {
+            width: 400px;
+        }
+
+        .picture-vertical {
+            width: 300px;
+        }
+    }
+
+    .gallery-text-3 {
+        margin: 0;
+    }
+}
+
+@media (max-width: 440px) {
+    .olejne-naturalistyczne {
+
+        .gallery-container {
+            margin-top: 180px;
+
+            header {
+                p {
+                   text-align: center; 
+                }
+            }
+
+            .gallery-picture {
+                
+        
+                .picture-horizontal {
+                    width: 300px;
+                }
+        
+                .picture-vertical {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 441px) and (max-width: 992px) {
+    .olejne-naturalistyczne {
+
+        .gallery-container {
+            margin-top: 180px;
+
+            header {
+                p {
+                   text-align: center; 
+                }
+            }
+
+            .gallery-picture {
+                flex-basis: 50%;
+        
+                .picture-horizontal {
+                    width: 400px;
+                }
+        
+                .picture-vertical {
+                    width: 380px;
+                }
+            }
+        }
+    }
+}

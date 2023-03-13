@@ -1,7 +1,7 @@
-.mandale {
+.akrylowe-mandale {
     @extend %gallery;
 
-    .close-mandale {
+    .close-akrylowe-mandale {
         @extend %close;
     }
 
@@ -15,7 +15,7 @@
 }
 
 @media (max-width: 440px) {
-    .mandale {
+    .akrylowe-mandale {
 
         .gallery-container {
             margin-top: 180px;
@@ -38,7 +38,7 @@
 }
 
 @media (min-width: 441px) and (max-width: 1200px) {
-    .mandale {
+    .akrylowe-mandale {
 
         .gallery-container {
             margin-top: 180px;

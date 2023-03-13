@@ -20,7 +20,7 @@
   text-decoration: none;
 }
 
-.szkice .close-szkice, .olejne-abstrakcje .close-olejne-abstrakcje, .mandale .close-mandale {
+.szkice .close-szkice, .olejne-naturalistyczne .close-olejne-naturalistyczne, .olejne-abstrakcje .close-olejne-abstrakcje, .akrylowe-abstrakcje .close-akrylowe-abstrakcje, .akrylowe-mandale .close-akrylowe-mandale {
   position: fixed;
   top: 0px;
   right: 10px;
@@ -29,50 +29,54 @@
   font-weight: bold;
   transition: 0.3s;
 }
-.szkice .close-szkice:hover, .olejne-abstrakcje .close-olejne-abstrakcje:hover, .mandale .close-mandale:hover {
+.szkice .close-szkice:hover, .olejne-naturalistyczne .close-olejne-naturalistyczne:hover, .olejne-abstrakcje .close-olejne-abstrakcje:hover, .akrylowe-abstrakcje .close-akrylowe-abstrakcje:hover, .akrylowe-mandale .close-akrylowe-mandale:hover {
   color: #bbb;
   cursor: pointer;
 }
 
-.contact .contact-container .picture, .szkice .gallery-container .gallery-picture .picture-horizontal, .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal, .mandale .gallery-container .gallery-picture .picture-horizontal,
+.contact .contact-container .picture, .szkice .gallery-container .gallery-picture .picture-horizontal, .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal, .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal, .akrylowe-abstrakcje .gallery-container .gallery-picture .picture-horizontal, .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal,
 .szkice .gallery-container .gallery-picture .picture-vertical,
+.olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical,
 .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical,
-.mandale .gallery-container .gallery-picture .picture-vertical {
+.akrylowe-abstrakcje .gallery-container .gallery-picture .picture-vertical,
+.akrylowe-mandale .gallery-container .gallery-picture .picture-vertical {
   border: 8px double rgb(242, 239, 239);
   box-shadow: 0 0 10px rgb(150, 150, 150);
   transition: opacity 0.5s;
 }
-.contact .contact-container .picture:hover, .szkice .gallery-container .gallery-picture .picture-horizontal:hover, .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal:hover, .mandale .gallery-container .gallery-picture .picture-horizontal:hover,
+.contact .contact-container .picture:hover, .szkice .gallery-container .gallery-picture .picture-horizontal:hover, .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal:hover, .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal:hover, .akrylowe-abstrakcje .gallery-container .gallery-picture .picture-horizontal:hover, .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal:hover,
 .szkice .gallery-container .gallery-picture .picture-vertical:hover,
+.olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical:hover,
 .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical:hover,
-.mandale .gallery-container .gallery-picture .picture-vertical:hover {
+.akrylowe-abstrakcje .gallery-container .gallery-picture .picture-vertical:hover,
+.akrylowe-mandale .gallery-container .gallery-picture .picture-vertical:hover {
   opacity: 0.5;
   cursor: pointer;
 }
 
-.szkice, .olejne-abstrakcje, .mandale {
+.szkice, .olejne-naturalistyczne, .olejne-abstrakcje, .akrylowe-abstrakcje, .akrylowe-mandale {
   position: absolute;
   display: none;
   transition: opacity 1s;
   opacity: 0;
 }
-.switch-gallery-on.szkice, .switch-gallery-on.olejne-abstrakcje, .switch-gallery-on.mandale {
+.switch-gallery-on.szkice, .switch-gallery-on.olejne-naturalistyczne, .switch-gallery-on.olejne-abstrakcje, .switch-gallery-on.akrylowe-abstrakcje, .switch-gallery-on.akrylowe-mandale {
   display: block;
 }
-.switch-gallery-opacity.szkice, .switch-gallery-opacity.olejne-abstrakcje, .switch-gallery-opacity.mandale {
+.switch-gallery-opacity.szkice, .switch-gallery-opacity.olejne-naturalistyczne, .switch-gallery-opacity.olejne-abstrakcje, .switch-gallery-opacity.akrylowe-abstrakcje, .switch-gallery-opacity.akrylowe-mandale {
   opacity: 1;
 }
-.szkice img, .olejne-abstrakcje img, .mandale img {
+.szkice img, .olejne-naturalistyczne img, .olejne-abstrakcje img, .akrylowe-abstrakcje img, .akrylowe-mandale img {
   width: 100%;
 }
-.szkice .gallery-text-1, .olejne-abstrakcje .gallery-text-1, .mandale .gallery-text-1 {
+.szkice .gallery-text-1, .olejne-naturalistyczne .gallery-text-1, .olejne-abstrakcje .gallery-text-1, .akrylowe-abstrakcje .gallery-text-1, .akrylowe-mandale .gallery-text-1 {
   text-align: center;
   padding: 5px;
   font-family: "Cinzel", serif;
   font-size: 16px;
   font-weight: 600;
 }
-.szkice .gallery-text-2, .olejne-abstrakcje .gallery-text-2, .mandale .gallery-text-2 {
+.szkice .gallery-text-2, .olejne-naturalistyczne .gallery-text-2, .olejne-abstrakcje .gallery-text-2, .akrylowe-abstrakcje .gallery-text-2, .akrylowe-mandale .gallery-text-2 {
   text-align: center;
   padding: 5px;
   font-family: "Cinzel", serif;
@@ -80,27 +84,27 @@
   font-weight: 400;
   margin-bottom: 20px;
 }
-.szkice .gallery-container, .olejne-abstrakcje .gallery-container, .mandale .gallery-container {
+.szkice .gallery-container, .olejne-naturalistyczne .gallery-container, .olejne-abstrakcje .gallery-container, .akrylowe-abstrakcje .gallery-container, .akrylowe-mandale .gallery-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 130px;
 }
-.szkice .gallery-container header, .olejne-abstrakcje .gallery-container header, .mandale .gallery-container header {
+.szkice .gallery-container header, .olejne-naturalistyczne .gallery-container header, .olejne-abstrakcje .gallery-container header, .akrylowe-abstrakcje .gallery-container header, .akrylowe-mandale .gallery-container header {
   flex-basis: 80%;
 }
-.szkice .gallery-container header p, .olejne-abstrakcje .gallery-container header p, .mandale .gallery-container header p {
+.szkice .gallery-container header p, .olejne-naturalistyczne .gallery-container header p, .olejne-abstrakcje .gallery-container header p, .akrylowe-abstrakcje .gallery-container header p, .akrylowe-mandale .gallery-container header p {
   font-family: "Cinzel", serif;
   color: #FF7D69;
   font-size: 20px;
   padding-bottom: 10px;
 }
-.szkice .gallery-container .gallery-picture, .olejne-abstrakcje .gallery-container .gallery-picture, .mandale .gallery-container .gallery-picture {
+.szkice .gallery-container .gallery-picture, .olejne-naturalistyczne .gallery-container .gallery-picture, .olejne-abstrakcje .gallery-container .gallery-picture, .akrylowe-abstrakcje .gallery-container .gallery-picture, .akrylowe-mandale .gallery-container .gallery-picture {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.szkice .gallery-container .gallery-picture .modal, .olejne-abstrakcje .gallery-container .gallery-picture .modal, .mandale .gallery-container .gallery-picture .modal {
+.szkice .gallery-container .gallery-picture .modal, .olejne-naturalistyczne .gallery-container .gallery-picture .modal, .olejne-abstrakcje .gallery-container .gallery-picture .modal, .akrylowe-abstrakcje .gallery-container .gallery-picture .modal, .akrylowe-mandale .gallery-container .gallery-picture .modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -111,14 +115,14 @@
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
 }
-.szkice .gallery-container .gallery-picture .modal .scale, .olejne-abstrakcje .gallery-container .gallery-picture .modal .scale, .mandale .gallery-container .gallery-picture .modal .scale {
+.szkice .gallery-container .gallery-picture .modal .scale, .olejne-naturalistyczne .gallery-container .gallery-picture .modal .scale, .olejne-abstrakcje .gallery-container .gallery-picture .modal .scale, .akrylowe-abstrakcje .gallery-container .gallery-picture .modal .scale, .akrylowe-mandale .gallery-container .gallery-picture .modal .scale {
   display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
   width: auto;
 }
-.szkice .gallery-container .gallery-picture .modal .scale .modal-content, .olejne-abstrakcje .gallery-container .gallery-picture .modal .scale .modal-content, .mandale .gallery-container .gallery-picture .modal .scale .modal-content {
+.szkice .gallery-container .gallery-picture .modal .scale .modal-content, .olejne-naturalistyczne .gallery-container .gallery-picture .modal .scale .modal-content, .olejne-abstrakcje .gallery-container .gallery-picture .modal .scale .modal-content, .akrylowe-abstrakcje .gallery-container .gallery-picture .modal .scale .modal-content, .akrylowe-mandale .gallery-container .gallery-picture .modal .scale .modal-content {
   padding: 30px;
   display: block;
   width: auto;
@@ -356,38 +360,73 @@ nav ul .nav-item a:hover {
     font-size: 20px;
   }
 }
-.mandale .gallery-picture {
+.akrylowe-mandale .gallery-picture {
   flex-basis: 33%;
 }
-.mandale .gallery-picture .picture-horizontal {
+.akrylowe-mandale .gallery-picture .picture-horizontal {
   width: 400px;
 }
 
 @media (max-width: 440px) {
-  .mandale .gallery-container {
+  .akrylowe-mandale .gallery-container {
     margin-top: 180px;
   }
-  .mandale .gallery-container header p {
+  .akrylowe-mandale .gallery-container header p {
     text-align: center;
   }
-  .mandale .gallery-container .gallery-picture {
+  .akrylowe-mandale .gallery-container .gallery-picture {
     flex-basis: 33%;
   }
-  .mandale .gallery-container .gallery-picture .picture-horizontal {
+  .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal {
     width: 300px;
   }
 }
 @media (min-width: 441px) and (max-width: 1200px) {
-  .mandale .gallery-container {
+  .akrylowe-mandale .gallery-container {
     margin-top: 180px;
   }
-  .mandale .gallery-container header p {
+  .akrylowe-mandale .gallery-container header p {
     text-align: center;
   }
-  .mandale .gallery-container .gallery-picture {
+  .akrylowe-mandale .gallery-container .gallery-picture {
     flex-basis: 50%;
   }
-  .mandale .gallery-container .gallery-picture .picture-horizontal {
+  .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal {
+    width: 400px;
+  }
+}
+.akrylowe-abstrakcje .gallery-picture {
+  flex-basis: 33%;
+}
+.akrylowe-abstrakcje .gallery-picture .picture-horizontal {
+  width: 400px;
+}
+
+@media (max-width: 440px) {
+  .akrylowe-abstrakcje .gallery-container {
+    margin-top: 180px;
+  }
+  .akrylowe-abstrakcje .gallery-container header p {
+    text-align: center;
+  }
+  .akrylowe-abstrakcje .gallery-container .gallery-picture {
+    flex-basis: 33%;
+  }
+  .akrylowe-abstrakcje .gallery-container .gallery-picture .picture-horizontal {
+    width: 300px;
+  }
+}
+@media (min-width: 441px) and (max-width: 1200px) {
+  .akrylowe-abstrakcje .gallery-container {
+    margin-top: 180px;
+  }
+  .akrylowe-abstrakcje .gallery-container header p {
+    text-align: center;
+  }
+  .akrylowe-abstrakcje .gallery-container .gallery-picture {
+    flex-basis: 50%;
+  }
+  .akrylowe-abstrakcje .gallery-container .gallery-picture .picture-horizontal {
     width: 400px;
   }
 }
@@ -522,6 +561,50 @@ nav ul .nav-item a:hover {
     width: 400px;
   }
   .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical {
+    width: 380px;
+  }
+}
+.olejne-naturalistyczne .gallery-picture {
+  flex-basis: 33%;
+}
+.olejne-naturalistyczne .gallery-picture .picture-horizontal {
+  width: 400px;
+}
+.olejne-naturalistyczne .gallery-picture .picture-vertical {
+  width: 300px;
+}
+.olejne-naturalistyczne .gallery-text-3 {
+  margin: 0;
+}
+
+@media (max-width: 440px) {
+  .olejne-naturalistyczne .gallery-container {
+    margin-top: 180px;
+  }
+  .olejne-naturalistyczne .gallery-container header p {
+    text-align: center;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal {
+    width: 300px;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical {
+    width: 300px;
+  }
+}
+@media (min-width: 441px) and (max-width: 992px) {
+  .olejne-naturalistyczne .gallery-container {
+    margin-top: 180px;
+  }
+  .olejne-naturalistyczne .gallery-container header p {
+    text-align: center;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture {
+    flex-basis: 50%;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal {
+    width: 400px;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical {
     width: 380px;
   }
 }
