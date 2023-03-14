@@ -130,16 +130,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 .szkice .gallery-container .gallery-picture .modal .scale .scale-1, .olejne-naturalistyczne .gallery-container .gallery-picture .modal .scale .scale-1, .olejne-abstrakcje .gallery-container .gallery-picture .modal .scale .scale-1, .akrylowe-abstrakcje .gallery-container .gallery-picture .modal .scale .scale-1, .akrylowe-mandale .gallery-container .gallery-picture .modal .scale .scale-1 {
-  max-height: 100%;
+  height: 100%;
 }
 .szkice .gallery-container .gallery-picture .modal .scale .scale-1 .modal-content, .olejne-naturalistyczne .gallery-container .gallery-picture .modal .scale .scale-1 .modal-content, .olejne-abstrakcje .gallery-container .gallery-picture .modal .scale .scale-1 .modal-content, .akrylowe-abstrakcje .gallery-container .gallery-picture .modal .scale .scale-1 .modal-content, .akrylowe-mandale .gallery-container .gallery-picture .modal .scale .scale-1 .modal-content {
   padding: 30px;
   display: block;
-  width: 100%;
-  height: 100%;
+  max-height: 100%;
 }
 
 * {
@@ -483,8 +482,11 @@ nav .open-menu-holder ul .nav-item:hover {
     letter-spacing: 5px;
   }
 }
+.akrylowe-abstrakcje .gallery-container header {
+  flex-basis: 65%;
+}
 .akrylowe-abstrakcje .gallery-picture {
-  flex-basis: 33%;
+  flex-basis: 100%;
 }
 .akrylowe-abstrakcje .gallery-picture .picture-horizontal {
   width: 400px;
@@ -497,22 +499,16 @@ nav .open-menu-holder ul .nav-item:hover {
   .akrylowe-abstrakcje .gallery-container header p {
     text-align: center;
   }
-  .akrylowe-abstrakcje .gallery-container .gallery-picture {
-    flex-basis: 33%;
-  }
   .akrylowe-abstrakcje .gallery-container .gallery-picture .picture-horizontal {
     width: 300px;
   }
 }
-@media (min-width: 441px) and (max-width: 1200px) {
+@media (min-width: 441px) and (max-width: 992px) {
   .akrylowe-abstrakcje .gallery-container {
     margin-top: 180px;
   }
   .akrylowe-abstrakcje .gallery-container header p {
     text-align: center;
-  }
-  .akrylowe-abstrakcje .gallery-container .gallery-picture {
-    flex-basis: 50%;
   }
   .akrylowe-abstrakcje .gallery-container .gallery-picture .picture-horizontal {
     width: 400px;
@@ -862,7 +858,7 @@ nav .open-menu-holder ul .nav-item:hover {
   flex-basis: 35%;
 }
 .szkice .gallery-picture .picture-horizontal {
-  width: 650px;
+  width: 500px;
 }
 .szkice .gallery-picture .picture-vertical {
   width: 350px;

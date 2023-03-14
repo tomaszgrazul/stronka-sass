@@ -1,12 +1,19 @@
 .akrylowe-abstrakcje {
     @extend %gallery;
 
+    .gallery-container {
+
+        header {
+            flex-basis: 65%;
+        }
+    }
+
     .close-akrylowe-abstrakcje {
         @extend %close;
     }
 
     .gallery-picture {
-        flex-basis: 33%;
+        flex-basis: 100%;
 
         .picture-horizontal {
             width: 400px;
@@ -27,7 +34,7 @@
             }
 
             .gallery-picture {
-                flex-basis: 33%;
+                // flex-basis: 33%;
         
                 .picture-horizontal {
                     width: 300px;
@@ -37,7 +44,7 @@
     }
 }
 
-@media (min-width: 441px) and (max-width: 1200px) {
+@media (min-width: 441px) and (max-width: 992px) {
     .akrylowe-abstrakcje {
 
         .gallery-container {
@@ -50,7 +57,7 @@
             }
 
             .gallery-picture {
-                flex-basis: 50%;
+                // flex-basis: 50%;
         
                 .picture-horizontal {
                     width: 400px;
