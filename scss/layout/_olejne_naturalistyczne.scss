@@ -10,10 +10,16 @@
 
         .picture-horizontal {
             width: 400px;
+            @include overlaySprzedany;
         }
 
         .picture-vertical {
             width: 300px;
+            @include overlaySprzedany;
+
+            .overlay {
+                font-size: 30px;
+            }
         }
     }
 
@@ -39,10 +45,16 @@
         
                 .picture-horizontal {
                     width: 300px;
+                    @include overlaySprzedany;
                 }
         
                 .picture-vertical {
                     width: 300px;
+                    @include overlaySprzedany;
+
+                    .overlay {
+                        font-size: 30px;
+                    }
                 }
             }
         }
@@ -66,10 +78,16 @@
         
                 .picture-horizontal {
                     width: 400px;
+                    @include overlaySprzedany;
                 }
         
                 .picture-vertical {
                     width: 380px;
+                    @include overlaySprzedany;
+
+                    .overlay {
+                        font-size: 30px;
+                    }
                 }
             }
         }

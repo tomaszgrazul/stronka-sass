@@ -43,6 +43,7 @@
   border: 8px double rgb(242, 239, 239);
   box-shadow: 0 0 10px rgb(150, 150, 150);
   transition: opacity 0.5s;
+  position: relative;
 }
 .contact .contact-container .picture:hover, .szkice .gallery-container .gallery-picture .picture-horizontal:hover, .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal:hover, .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal:hover, .akrylowe-abstrakcje .gallery-container .gallery-picture .picture-horizontal:hover, .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal:hover,
 .szkice .gallery-container .gallery-picture .picture-vertical:hover,
@@ -50,7 +51,7 @@
 .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical:hover,
 .akrylowe-abstrakcje .gallery-container .gallery-picture .picture-vertical:hover,
 .akrylowe-mandale .gallery-container .gallery-picture .picture-vertical:hover {
-  opacity: 0.5;
+  opacity: 0.8;
   cursor: pointer;
 }
 
@@ -104,6 +105,16 @@
   flex-direction: column;
   align-items: center;
 }
+.szkice .gallery-container .gallery-picture .picture-horizontal, .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal, .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal, .akrylowe-abstrakcje .gallery-container .gallery-picture .picture-horizontal, .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal,
+.szkice .gallery-container .gallery-picture .picture-vertical,
+.olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical,
+.olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical,
+.akrylowe-abstrakcje .gallery-container .gallery-picture .picture-vertical,
+.akrylowe-mandale .gallery-container .gallery-picture .picture-vertical {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .szkice .gallery-container .gallery-picture .modal, .olejne-naturalistyczne .gallery-container .gallery-picture .modal, .olejne-abstrakcje .gallery-container .gallery-picture .modal, .akrylowe-abstrakcje .gallery-container .gallery-picture .modal, .akrylowe-mandale .gallery-container .gallery-picture .modal {
   display: none;
   position: fixed;
@@ -119,14 +130,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: auto;
-  width: auto;
+  height: 100vh;
 }
-.szkice .gallery-container .gallery-picture .modal .scale .modal-content, .olejne-naturalistyczne .gallery-container .gallery-picture .modal .scale .modal-content, .olejne-abstrakcje .gallery-container .gallery-picture .modal .scale .modal-content, .akrylowe-abstrakcje .gallery-container .gallery-picture .modal .scale .modal-content, .akrylowe-mandale .gallery-container .gallery-picture .modal .scale .modal-content {
+.szkice .gallery-container .gallery-picture .modal .scale .scale-1, .olejne-naturalistyczne .gallery-container .gallery-picture .modal .scale .scale-1, .olejne-abstrakcje .gallery-container .gallery-picture .modal .scale .scale-1, .akrylowe-abstrakcje .gallery-container .gallery-picture .modal .scale .scale-1, .akrylowe-mandale .gallery-container .gallery-picture .modal .scale .scale-1 {
+  max-height: 100%;
+}
+.szkice .gallery-container .gallery-picture .modal .scale .scale-1 .modal-content, .olejne-naturalistyczne .gallery-container .gallery-picture .modal .scale .scale-1 .modal-content, .olejne-abstrakcje .gallery-container .gallery-picture .modal .scale .scale-1 .modal-content, .akrylowe-abstrakcje .gallery-container .gallery-picture .modal .scale .scale-1 .modal-content, .akrylowe-mandale .gallery-container .gallery-picture .modal .scale .scale-1 .modal-content {
   padding: 30px;
   display: block;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 * {
@@ -366,6 +379,18 @@ nav ul .nav-item a:hover {
 .akrylowe-mandale .gallery-picture .picture-horizontal {
   width: 400px;
 }
+.akrylowe-mandale .gallery-picture .picture-horizontal:hover .overlay {
+  opacity: 1;
+}
+.akrylowe-mandale .gallery-picture .picture-horizontal .overlay {
+  position: absolute;
+  opacity: 0;
+  font-size: 50px;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 5px;
+}
 
 @media (max-width: 440px) {
   .akrylowe-mandale .gallery-container {
@@ -380,6 +405,21 @@ nav ul .nav-item a:hover {
   .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal {
     width: 300px;
   }
+  .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal:hover .overlay {
+    opacity: 1;
+  }
+  .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal .overlay {
+    position: absolute;
+    opacity: 0;
+    font-size: 50px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 5px;
+  }
+  .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal .overlay {
+    font-size: 30px;
+  }
 }
 @media (min-width: 441px) and (max-width: 1200px) {
   .akrylowe-mandale .gallery-container {
@@ -393,6 +433,18 @@ nav ul .nav-item a:hover {
   }
   .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal {
     width: 400px;
+  }
+  .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal:hover .overlay {
+    opacity: 1;
+  }
+  .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal .overlay {
+    position: absolute;
+    opacity: 0;
+    font-size: 50px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 5px;
   }
 }
 .akrylowe-abstrakcje .gallery-picture {
@@ -526,8 +578,35 @@ nav ul .nav-item a:hover {
 .olejne-abstrakcje .gallery-picture .picture-horizontal {
   width: 400px;
 }
+.olejne-abstrakcje .gallery-picture .picture-horizontal:hover .overlay {
+  opacity: 1;
+}
+.olejne-abstrakcje .gallery-picture .picture-horizontal .overlay {
+  position: absolute;
+  opacity: 0;
+  font-size: 50px;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 5px;
+}
 .olejne-abstrakcje .gallery-picture .picture-vertical {
   width: 300px;
+}
+.olejne-abstrakcje .gallery-picture .picture-vertical:hover .overlay {
+  opacity: 1;
+}
+.olejne-abstrakcje .gallery-picture .picture-vertical .overlay {
+  position: absolute;
+  opacity: 0;
+  font-size: 50px;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 5px;
+}
+.olejne-abstrakcje .gallery-picture .picture-vertical .overlay {
+  font-size: 30px;
 }
 .olejne-abstrakcje .gallery-text-3 {
   margin: 0;
@@ -543,8 +622,35 @@ nav ul .nav-item a:hover {
   .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal {
     width: 300px;
   }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal:hover .overlay {
+    opacity: 1;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal .overlay {
+    position: absolute;
+    opacity: 0;
+    font-size: 50px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 5px;
+  }
   .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical {
     width: 300px;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical:hover .overlay {
+    opacity: 1;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical .overlay {
+    position: absolute;
+    opacity: 0;
+    font-size: 50px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 5px;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical .overlay {
+    font-size: 30px;
   }
 }
 @media (min-width: 441px) and (max-width: 992px) {
@@ -560,8 +666,35 @@ nav ul .nav-item a:hover {
   .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal {
     width: 400px;
   }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal:hover .overlay {
+    opacity: 1;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal .overlay {
+    position: absolute;
+    opacity: 0;
+    font-size: 50px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 5px;
+  }
   .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical {
     width: 380px;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical:hover .overlay {
+    opacity: 1;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical .overlay {
+    position: absolute;
+    opacity: 0;
+    font-size: 50px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 5px;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical .overlay {
+    font-size: 30px;
   }
 }
 .olejne-naturalistyczne .gallery-picture {
@@ -570,8 +703,35 @@ nav ul .nav-item a:hover {
 .olejne-naturalistyczne .gallery-picture .picture-horizontal {
   width: 400px;
 }
+.olejne-naturalistyczne .gallery-picture .picture-horizontal:hover .overlay {
+  opacity: 1;
+}
+.olejne-naturalistyczne .gallery-picture .picture-horizontal .overlay {
+  position: absolute;
+  opacity: 0;
+  font-size: 50px;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 5px;
+}
 .olejne-naturalistyczne .gallery-picture .picture-vertical {
   width: 300px;
+}
+.olejne-naturalistyczne .gallery-picture .picture-vertical:hover .overlay {
+  opacity: 1;
+}
+.olejne-naturalistyczne .gallery-picture .picture-vertical .overlay {
+  position: absolute;
+  opacity: 0;
+  font-size: 50px;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  color: black;
+  letter-spacing: 5px;
+}
+.olejne-naturalistyczne .gallery-picture .picture-vertical .overlay {
+  font-size: 30px;
 }
 .olejne-naturalistyczne .gallery-text-3 {
   margin: 0;
@@ -587,8 +747,35 @@ nav ul .nav-item a:hover {
   .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal {
     width: 300px;
   }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal:hover .overlay {
+    opacity: 1;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal .overlay {
+    position: absolute;
+    opacity: 0;
+    font-size: 50px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 5px;
+  }
   .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical {
     width: 300px;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical:hover .overlay {
+    opacity: 1;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical .overlay {
+    position: absolute;
+    opacity: 0;
+    font-size: 50px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 5px;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical .overlay {
+    font-size: 30px;
   }
 }
 @media (min-width: 441px) and (max-width: 992px) {
@@ -604,8 +791,35 @@ nav ul .nav-item a:hover {
   .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal {
     width: 400px;
   }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal:hover .overlay {
+    opacity: 1;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal .overlay {
+    position: absolute;
+    opacity: 0;
+    font-size: 50px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 5px;
+  }
   .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical {
     width: 380px;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical:hover .overlay {
+    opacity: 1;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical .overlay {
+    position: absolute;
+    opacity: 0;
+    font-size: 50px;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 5px;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical .overlay {
+    font-size: 30px;
   }
 }
 .szkice .gallery-picture {
