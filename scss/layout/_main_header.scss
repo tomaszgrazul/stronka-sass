@@ -58,10 +58,11 @@
 
 }
 
-@media (min-width: 400px) and (max-width: 576px) {
+@media (min-width: 300px) and (max-width: 576px) {
     .main-header-container {
         .main-header-sign-container {
             flex-basis: 45%;
+            font-size: 19px;
         }
     }
 } 
