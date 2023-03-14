@@ -153,6 +153,7 @@
   background-color: white;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   position: fixed;
   left: 0px;
   top: 0px;
@@ -198,37 +199,62 @@
   color: #1b1b1b;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 400px) and (max-width: 576px) {
   .main-header-container .main-header-sign-container {
-    flex-basis: 100%;
+    flex-basis: 45%;
   }
 }
 @media (min-width: 577px) and (max-width: 992px) {
   .main-header-container .main-header-sign-container {
-    flex-basis: 20%;
-    text-align: center;
+    flex-basis: 30%;
   }
 }
 @media (min-width: 993px) {
   .main-header-container .main-header-sign-container {
-    text-align: center;
+    flex-basis: 17%;
   }
 }
 nav {
   flex-basis: 70%;
 }
-nav ul {
+nav .fa-bars {
+  font-size: 28px;
+  line-height: 90px;
+  color: black;
+  cursor: pointer;
+}
+nav .open-menu-holder {
+  position: fixed;
+  background-color: rgb(34, 25, 25);
+  top: 0;
+  right: 0;
+  width: 220px;
+  padding: 12px 23px;
+  display: none;
+}
+nav .open-menu-holder.open {
+  display: block;
+}
+nav .open-menu-holder .mobile-close {
+  color: #fff;
+  text-align: right;
+  height: 50px;
+}
+nav .open-menu-holder .mobile-close .fa-times {
+  font-size: 28px;
+  line-height: 70px;
+  cursor: pointer;
+}
+nav .open-menu-holder ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-nav ul .nav-item {
+nav .open-menu-holder ul .nav-item {
   display: inline-block;
   padding: 30px;
-}
-nav ul .nav-item a {
   color: #9C9C9C;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
@@ -236,20 +262,18 @@ nav ul .nav-item a {
   transition: all 0.3s;
   text-decoration: none;
 }
-nav ul .nav-item a:hover {
+nav .open-menu-holder ul .nav-item:hover {
   color: pink;
   cursor: pointer;
 }
 
 @media (max-width: 400px) {
   .main-header-container nav {
-    flex-basis: 60%;
+    flex-basis: 10%;
   }
-  .main-header-container nav .nav-item {
-    padding: 5px;
-  }
-  .main-header-container nav .nav-item a {
-    font-size: 18px;
+  .main-header-container nav .open-menu-holder .nav-item {
+    padding: 20px;
+    font-size: 30px;
   }
   .main-header-container .social-link {
     font-size: 21px;
@@ -258,13 +282,14 @@ nav ul .nav-item a:hover {
 }
 @media (min-width: 400px) and (max-width: 576px) {
   .main-header-container nav {
-    flex-basis: 70%;
+    flex-basis: 10%;
   }
-  .main-header-container nav .nav-item {
-    padding: 5px;
+  .main-header-container nav .open-menu-holder .nav-item {
+    padding: 20px;
+    font-size: 25px;
   }
   .main-header-container .social-links {
-    flex-basis: 20%;
+    flex-basis: 10%;
   }
   .main-header-container .social-links .social-link {
     font-size: 21px;
@@ -272,13 +297,10 @@ nav ul .nav-item a:hover {
 }
 @media (min-width: 577px) and (max-width: 768px) {
   .main-header-container nav {
-    flex-basis: 58%;
-  }
-  .main-header-container nav .nav-item {
-    padding: 15px;
+    flex-basis: 10%;
   }
   .main-header-container .social-links {
-    flex-basis: 20%;
+    flex-basis: 15%;
   }
   .main-header-container .social-links .social-link {
     font-size: 25px;
@@ -287,10 +309,23 @@ nav ul .nav-item a:hover {
 }
 @media (min-width: 769px) and (max-width: 992px) {
   .main-header-container nav {
-    flex-basis: 58%;
+    flex-basis: 10%;
   }
-  .main-header-container nav .nav-item {
-    padding: 25px;
+}
+@media (min-width: 993px) {
+  .main-header-container nav {
+    flex-basis: 63%;
+  }
+  .main-header-container .fa-bars,
+  .main-header-container .mobile-close {
+    display: none;
+  }
+  .main-header-container .open-menu-holder {
+    display: block;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    padding: 0;
   }
 }
 .main-section .top-container .top-ewa, .main-section .top-container .top-galeria {

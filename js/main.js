@@ -1,3 +1,15 @@
+document.getElementsByClassName('fa-bars')[0].addEventListener('click', function() {
+    
+    document.getElementsByClassName('open-menu-holder')[0].classList.toggle('open');
+});
+
+document.getElementsByClassName('fa-times')[0].addEventListener('click', function() {
+
+    document.getElementsByClassName('open-menu-holder')[0].classList.toggle('open');
+})
+
+
+
 var modalAkryloweMandale = document.querySelectorAll('#modal-img-akrylowe-mandale');
 
     for (var i = 0, j = modalAkryloweMandale.length; i < j; i++) {

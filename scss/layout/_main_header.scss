@@ -3,7 +3,7 @@
     background-color: white;
     display: flex;
     flex-wrap: wrap;
-    // block-size: fit-content;
+    justify-content: space-between;
     position: fixed;
     left: 0px;
     top: 0px;
@@ -58,10 +58,10 @@
 
 }
 
-@media (max-width: 576px) {
+@media (min-width: 400px) and (max-width: 576px) {
     .main-header-container {
         .main-header-sign-container {
-            flex-basis: 100%;
+            flex-basis: 45%;
         }
     }
 } 
@@ -69,16 +69,16 @@
 @media (min-width: 577px) and (max-width: 992px) {
     .main-header-container {
         .main-header-sign-container {
-            flex-basis: 20%;
-            text-align: center;
+            flex-basis: 30%;
         }
     }
 } 
 
 @media (min-width: 993px) {
     .main-header-container {
+
         .main-header-sign-container {
-            text-align: center;
+            flex-basis: 17%;
         }
     }
 }
