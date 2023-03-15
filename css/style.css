@@ -13,11 +13,11 @@
   background-color: #8FC9D9;
   transition: all 0.5s;
 }
-.akrylowe .btn-abstrakcje button:hover a, .akrylowe .btn-mandale button:hover a, .olejne .btn-naturalistyczne button:hover a, .olejne .btn-abstrakcje-olejne button:hover a {
+.akrylowe .btn-abstrakcje button:hover button, .akrylowe .btn-mandale button:hover button, .olejne .btn-naturalistyczne button:hover button, .olejne .btn-abstrakcje-olejne button:hover button {
   color: white;
   cursor: pointer;
 }
-.akrylowe .btn-abstrakcje button a, .akrylowe .btn-mandale button a, .olejne .btn-naturalistyczne button a, .olejne .btn-abstrakcje-olejne button a {
+.akrylowe .btn-abstrakcje button button, .akrylowe .btn-mandale button button, .olejne .btn-naturalistyczne button button, .olejne .btn-abstrakcje-olejne button button {
   text-decoration: none;
 }
 
