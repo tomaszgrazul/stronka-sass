@@ -2,7 +2,7 @@
 @import 'utils/mixins';
 @import 'utils/extend';
 
-// @import 'base/normalize';
+@import 'base/normalize';
 @import 'base/global';
 
 @import 'layout/main_header';
@@ -17,5 +17,3 @@
 @import 'layout/akrylowe';
 @import 'layout/contact';
 @import 'layout/footer';
-
-@import 'components/buttons';
