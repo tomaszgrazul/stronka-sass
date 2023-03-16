@@ -75,11 +75,6 @@ nav {
                 }
             }
         }
-
-        .social-link {
-            font-size: 21px;
-            flex-basis: 20%;
-        }
     } 
 }
 
@@ -97,14 +92,6 @@ nav {
                 }
             }
         }
-    
-        .social-links {
-            flex-basis: 10%;
-
-            .social-link {
-                font-size: 21px;
-            }
-        }
     } 
 }
 
@@ -112,15 +99,6 @@ nav {
     .main-header-container {
         nav {
             flex-basis: 10%;
-        }
-     
-        .social-links {
-            flex-basis: 15%;
-
-            .social-link {
-                font-size: 25px;
-                margin: 0 15px;
-            }
         }
     } 
 }
@@ -138,6 +116,42 @@ nav {
 
         nav {
             flex-basis: 63%;
+        }
+
+        .fa-bars,
+        .mobile-close {
+            display: none;
+        }
+    
+        .open-menu-holder {
+            display: block;
+            position: static;
+            background-color: transparent;
+            width: auto;
+            padding: 0;
+        }
+    }
+}
+
+@media print {
+
+    .main-header-container {
+
+        nav {
+            flex-basis: 65%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .open-menu-holder {
+
+                ul {
+                    .nav-item {
+                        padding: 20px;
+                        font-size: 20px;
+                    }
+                }
+            }   
         }
 
         .fa-bars,
