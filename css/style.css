@@ -1263,10 +1263,11 @@ nav .open-menu-holder ul .nav-item:hover {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  justify-content: center;
   top: 150px;
-  left: 250px;
 }
 .contact .contact-container .contact-header {
+  flex-basis: 100%;
   font-family: "Cinzel", serif;
   color: #48656D;
   font-size: 24px;
@@ -1274,14 +1275,12 @@ nav .open-menu-holder ul .nav-item:hover {
 .contact .contact-container .contact-header p {
   position: relative;
   margin-bottom: 20px;
-  left: 550px;
 }
 .contact .contact-container .picture {
-  width: 450px;
   pointer-events: none;
 }
 .contact .contact-container .contact-text {
-  width: 45%;
+  flex-basis: 40%;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-size: 16px;
@@ -1297,7 +1296,9 @@ nav .open-menu-holder ul .nav-item:hover {
   font-weight: 700;
   font-size: 17px;
   position: relative;
-  top: 50px;
+  flex-basis: 40%;
+  top: 65px;
+  right: -25px;
 }
 .contact .contact-container address p {
   padding: 10px;
@@ -1316,65 +1317,67 @@ nav .open-menu-holder ul .nav-item:hover {
   left: 480px;
 }
 .contact .img-vertical {
-  width: 435px;
+  width: 300px;
 }
 
-@media (max-width: 992px) {
-  .contact .contact-container {
-    left: 50px;
-    justify-content: center;
-  }
-  .contact .contact-container .contact-header {
-    flex-basis: 100%;
-  }
+@media (max-width: 576px) {
   .contact .contact-container .contact-header p {
-    left: 480px;
-  }
-  .contact .contact-container .picture {
-    flex-basis: 32%;
+    text-align: center;
   }
   .contact .contact-container .contact-text {
-    width: 40%;
-    font-size: 15px;
-  }
-  .contact .contact-container .contact-text p {
-    padding: 5px;
+    flex-basis: 60%;
   }
   .contact .contact-container .contact-sign {
-    flex-basis: 100%;
-  }
-  .contact .contact-container .contact-sign img {
-    left: 480px;
+    height: 80px;
+    text-align: center;
   }
   .contact .contact-container address {
-    flex-basis: 40%;
-    top: 65px;
-    right: -25px;
+    position: initial;
+    text-align: center;
   }
   .contact .contact-container address p {
     margin: 0;
   }
-  .contact .img-vertical {
-    width: 300px;
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .contact .contact-container .contact-header p {
+    left: 420px;
+  }
+  .contact .contact-container .contact-text {
+    font-size: 12px;
+  }
+  .contact .contact-container .contact-text p {
+    padding: 6px;
+  }
+  .contact .contact-sign img {
+    left: 400px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .contact .contact-container .contact-header p {
+    left: 430px;
+  }
+  .contact .contact-container .contact-text {
+    font-size: 14px;
+  }
+  .contact .contact-container .contact-text p {
+    padding: 4px;
+  }
+  .contact .contact-sign img {
+    left: 420px;
   }
 }
 @media (min-width: 993px) and (max-width: 1200px) {
-  .contact .contact-container {
-    left: 35px;
-  }
-  .contact .contact-container header {
-    flex-basis: 100%;
-  }
-  .contact .contact-container .contact-text p {
-    padding: 5px;
+  .contact .contact-container .contact-header p {
+    left: 480px;
   }
 }
 @media (min-width: 1201px) {
-  .contact header {
-    flex-basis: 100%;
+  .contact .contact-header p {
+    left: 675px;
   }
   .contact .contact-sign img {
-    left: 550px;
+    left: 675px;
   }
   .contact .contact-container .picture {
     width: 385px;
@@ -1390,10 +1393,6 @@ nav .open-menu-holder ul .nav-item:hover {
   }
   .contact .contact-container {
     left: 150px;
-    justify-content: center;
-  }
-  .contact .contact-container .contact-header {
-    flex-basis: 100%;
   }
   .contact .contact-container .contact-header p {
     left: 430px;

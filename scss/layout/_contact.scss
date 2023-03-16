@@ -12,14 +12,14 @@
     }
 
    .contact-container {
-        // flex-basis: 50%;
         display: flex;
         flex-wrap: wrap;
         position: relative;
+        justify-content: center;
         top: 150px;
-        left: 250px;
 
         .contact-header {
+            flex-basis: 100%;
             font-family: $third-font;
             color: #48656D;
             font-size: 24px;
@@ -27,18 +27,16 @@
             p {
                 position: relative;
                 margin-bottom: 20px;
-                left: 550px; 
             }
         }
    
        .picture {
            @extend %frame;
-           width: 450px;
            pointer-events: none;
         }
 
         .contact-text {
-            width: 45%;
+            flex-basis: 40%;
             font-family: $fourth-font;
             font-weight: 300;
             font-size: 16px;
@@ -56,7 +54,9 @@
             font-weight: 700;
             font-size: 17px;
             position: relative;
-            top: 50px;
+            flex-basis: 40%;
+            top: 65px;
+            right: -25px;
 
             p {
                 padding: 10px;
@@ -67,8 +67,7 @@
         }
    }
 
-   .contact-sign {
-
+    .contact-sign {
         flex-basis: 100%;
         height: 60px;
 
@@ -81,74 +80,113 @@
     }
 
    .img-vertical {
-        width: 435px;
+        width: 300px;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
     .contact {
+
         .contact-container {
-            left: 50px;
-            justify-content: center;
 
             .contact-header {
-                flex-basis: 100%;
-
+            
                 p {
-                    left: 480px;
+                    text-align: center;
                 }
-            }
-
-            .picture {
-                flex-basis: 32%;
             }
 
             .contact-text {
-                width: 40%;
-                font-size: 15px;
-
-                p {
-                    padding: 5px;
-                }
+                flex-basis: 60%;
             }
 
             .contact-sign {
-                flex-basis: 100%;
-                
-    
-                img {
-                    left: 480px;
-                }
+                height: 80px;
+                text-align: center;
             }
-
+    
             address {
-                flex-basis: 40%;
-                top: 65px;
-                right: -25px;
+                position: initial;
+                text-align: center;
 
                 p {
                     margin: 0;
                 }
             }
         }
+    }
+}
 
-        .img-vertical {
-            width: 300px;
+@media (min-width: 577px) and (max-width: 768px) {
+    .contact {
+
+        .contact-container {
+
+            .contact-header {
+            
+                p {
+                    left: 420px;
+                }
+            }
+
+            .contact-text {
+                font-size: 12px;
+    
+                p {
+                    padding: 6px;
+                }
+            }
+        }
+
+        .contact-sign {
+            
+            img {
+                left: 400px;
+            }
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .contact {
+
+        .contact-container {
+
+            .contact-header {
+            
+                p {
+                    left: 430px;
+                }
+            }
+
+            .contact-text {
+                font-size: 14px;
+    
+                p {
+                    padding: 4px;
+                }
+            }
+        }
+        
+        .contact-sign {
+            
+            img {
+                left: 420px;
+            }
         }
     }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
     .contact {
-        .contact-container {
-            left: 35px;
-     
-            header {
-             flex-basis: 100%;
-            }
 
-            .contact-text p {
-                padding: 5px;
+        .contact-container {
+     
+            .contact-header {
+                
+                p {
+                    left: 480px;
+                }
             }
         }
     }
@@ -156,15 +194,20 @@
 
 @media (min-width: 1201px) {
     .contact {     
-        header {
-            flex-basis: 100%;
+
+        .contact-header {
+                
+            p {
+                left: 675px;
+            }
         }
 
         .contact-sign img {
-            left: 550px;
+            left: 675px;
         }
         
         .contact-container {
+
             .picture {
                 width: 385px;
     
@@ -178,19 +221,21 @@
 
 
 @media print {
+
     html, body {
         width: 210mm;
         height: 297mm;
       }
-// @media (max-width: 995px ) {
+
     .contact {
+        
         .contact-container {
             // top: 140px;
             left: 150px;
-            justify-content: center;
+            // justify-content: center;
 
             .contact-header {
-                flex-basis: 100%;
+                // flex-basis: 100%;
 
                 p {
                     left: 430px;
