@@ -1,5 +1,8 @@
 nav {
     flex-basis: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .fa-bars {
         font-size: 28px;
@@ -39,8 +42,6 @@ nav {
             padding: 0;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
     
             .nav-item {
                 display: inline-block;

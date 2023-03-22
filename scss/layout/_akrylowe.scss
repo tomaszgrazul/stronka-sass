@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     display: none;
     position: absolute;
-    transition: opacity 1s;
+    transition: opacity 2s;
     opacity: 0;
 
     &.switch-akrylowe-on {
@@ -26,7 +26,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        top: 130px;
+        top: 170px;
 
         header {
             height: 50px;
@@ -49,7 +49,7 @@
 
         button {
             @extend %btn-main;
-            margin: 100px 0 50px 250px;
+            margin: 100px 0 25px 250px;
         }
     }
     
@@ -58,7 +58,7 @@
 
         button {
             @extend %btn-main;
-            margin: 50px 0 0 250px;
+            margin: 25px 0 0 250px;
         }
     }
 }

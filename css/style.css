@@ -2,12 +2,12 @@
 .akrylowe .btn-abstrakcje button, .akrylowe .btn-mandale button, .olejne .btn-naturalistyczne button, .olejne .btn-abstrakcje-olejne button {
   background-color: white;
   color: green;
-  height: 120px;
-  width: 230px;
+  height: 85px;
+  width: 210px;
   position: relative;
   transition: all 0.3s;
   font-family: "Cinzel", serif;
-  font-size: 22px;
+  font-size: 15px;
 }
 .akrylowe .btn-abstrakcje button:hover, .akrylowe .btn-mandale button:hover, .olejne .btn-naturalistyczne button:hover, .olejne .btn-abstrakcje-olejne button:hover {
   background-color: #8FC9D9;
@@ -395,7 +395,7 @@ input[type=checkbox], input[type=radio] {
   box-shadow: 0px 3px 5px rgb(129, 126, 126);
 }
 .main-header-container .main-header-sign-container {
-  height: 90px;
+  height: 128px;
   flex-basis: 15%;
   font-size: 22px;
   font-family: "Montserrat", sans-serif;
@@ -473,6 +473,9 @@ input[type=checkbox], input[type=radio] {
 }
 nav {
   flex-basis: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 nav .fa-bars {
   font-size: 28px;
@@ -506,8 +509,6 @@ nav .open-menu-holder ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 nav .open-menu-holder ul .nav-item {
   display: inline-block;
@@ -607,7 +608,7 @@ nav .open-menu-holder ul .nav-item:hover {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  transition: opacity 1s;
+  transition: opacity 2s;
 }
 .main-section.switch-main-off {
   display: none;
@@ -786,7 +787,7 @@ nav .open-menu-holder ul .nav-item:hover {
   background-repeat: no-repeat;
   display: none;
   position: absolute;
-  transition: opacity 1s;
+  transition: opacity 2s;
   opacity: 0;
 }
 .olejne.switch-olejne-on {
@@ -803,7 +804,7 @@ nav .open-menu-holder ul .nav-item:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  top: 130px;
+  top: 170px;
 }
 .olejne .olejne-container header {
   height: 50px;
@@ -821,13 +822,13 @@ nav .open-menu-holder ul .nav-item:hover {
   flex-basis: 100%;
 }
 .olejne .btn-abstrakcje-olejne button {
-  margin: 100px 0 50px 250px;
+  margin: 100px 0 25px 250px;
 }
 .olejne .btn-naturalistyczne {
   flex-basis: 100%;
 }
 .olejne .btn-naturalistyczne button {
-  margin: 50px 0 0 250px;
+  margin: 25px 0 0 250px;
 }
 
 @media (max-width: 490px) {
@@ -1167,7 +1168,7 @@ nav .open-menu-holder ul .nav-item:hover {
   background-repeat: no-repeat;
   display: none;
   position: absolute;
-  transition: opacity 1s;
+  transition: opacity 2s;
   opacity: 0;
 }
 .akrylowe.switch-akrylowe-on {
@@ -1184,7 +1185,7 @@ nav .open-menu-holder ul .nav-item:hover {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  top: 130px;
+  top: 170px;
 }
 .akrylowe .akrylowe-container header {
   height: 50px;
@@ -1202,13 +1203,13 @@ nav .open-menu-holder ul .nav-item:hover {
   flex-basis: 100%;
 }
 .akrylowe .btn-mandale button {
-  margin: 100px 0 50px 250px;
+  margin: 100px 0 25px 250px;
 }
 .akrylowe .btn-abstrakcje {
   flex-basis: 100%;
 }
 .akrylowe .btn-abstrakcje button {
-  margin: 50px 0 0 250px;
+  margin: 25px 0 0 250px;
 }
 
 @media (max-width: 490px) {
@@ -1250,7 +1251,7 @@ nav .open-menu-holder ul .nav-item:hover {
 }
 .contact {
   display: none;
-  transition: opacity 1s;
+  transition: opacity 2s;
   opacity: 0;
 }
 .contact.switch-contact-on {
@@ -1264,13 +1265,13 @@ nav .open-menu-holder ul .nav-item:hover {
   flex-wrap: wrap;
   position: relative;
   justify-content: center;
-  top: 150px;
+  top: 180px;
 }
 .contact .contact-container .contact-header {
   flex-basis: 100%;
   font-family: "Cinzel", serif;
   color: #48656D;
-  font-size: 24px;
+  font-size: 22px;
 }
 .contact .contact-container .contact-header p {
   position: relative;
@@ -1284,17 +1285,20 @@ nav .open-menu-holder ul .nav-item:hover {
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-size: 16px;
+  line-height: 1.8em;
 }
 .contact .contact-container .contact-text p {
-  padding: 11px;
-  margin-left: 30px;
+  margin-left: 40px;
   text-transform: none;
   color: #4A4A4A;
+}
+.contact .contact-container .contact-text .contact-text-1 {
+  padding-top: 20px;
 }
 .contact .contact-container address {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 14px;
   position: relative;
   flex-basis: 40%;
   top: 65px;
@@ -1331,6 +1335,9 @@ nav .open-menu-holder ul .nav-item:hover {
     height: 80px;
     text-align: center;
   }
+  .contact .contact-container .contact-sign img {
+    position: initial;
+  }
   .contact .contact-container address {
     position: initial;
     text-align: center;
@@ -1344,32 +1351,37 @@ nav .open-menu-holder ul .nav-item:hover {
     left: 420px;
   }
   .contact .contact-container .contact-text {
-    font-size: 12px;
+    font-size: 11px;
+    line-height: 1.2em;
   }
-  .contact .contact-container .contact-text p {
-    padding: 6px;
+  .contact .img-vertical {
+    width: 250px;
+  }
+  .contact .contact-sign img {
+    left: 330px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .contact .contact-container .contact-header p {
+    left: 480px;
+  }
+  .contact .contact-container .contact-text {
+    font-size: 12px;
+    line-height: 1.5em;
   }
   .contact .contact-sign img {
     left: 400px;
   }
 }
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 993px) and (max-width: 1200px) {
   .contact .contact-container .contact-header p {
-    left: 430px;
+    left: 480px;
   }
   .contact .contact-container .contact-text {
     font-size: 14px;
   }
-  .contact .contact-container .contact-text p {
-    padding: 4px;
-  }
-  .contact .contact-sign img {
-    left: 420px;
-  }
-}
-@media (min-width: 993px) and (max-width: 1200px) {
-  .contact .contact-container .contact-header p {
-    left: 480px;
+  .contact .contact-container .contact-text .contact-text-1 {
+    padding-top: 14px;
   }
 }
 @media (min-width: 1201px) {
@@ -1395,7 +1407,7 @@ nav .open-menu-holder ul .nav-item:hover {
     left: 150px;
   }
   .contact .contact-container .contact-header p {
-    left: 430px;
+    left: 130px;
   }
   .contact .contact-container .picture {
     flex-basis: 32%;
@@ -1411,7 +1423,7 @@ nav .open-menu-holder ul .nav-item:hover {
     flex-basis: 100%;
   }
   .contact .contact-container .contact-sign img {
-    left: 420px;
+    left: 120px;
   }
   .contact .contact-container address {
     flex-basis: 40%;
