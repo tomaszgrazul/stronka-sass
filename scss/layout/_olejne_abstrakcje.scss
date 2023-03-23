@@ -6,16 +6,16 @@
     }
 
     .gallery-picture {
-        flex-basis: 33%;
+        flex-basis: 25%;
 
         .picture-horizontal {
-            width: 400px;
-            @include overlaySprzedany;
+            width: 600px;
+            // @include overlaySprzedany;
         }
 
         .picture-vertical {
-            width: 300px;
-            @include overlaySprzedany;
+            width: 430px;
+            // @include overlaySprzedany;
             
             .overlay {
                 font-size: 30px;
@@ -45,12 +45,12 @@
         
                 .picture-horizontal {
                     width: 300px;
-                    @include overlaySprzedany;
+                    // @include overlaySprzedany;
                 }
         
                 .picture-vertical {
                     width: 300px;
-                    @include overlaySprzedany;
+                    // @include overlaySprzedany;
 
                     .overlay {
                         font-size: 30px;
@@ -78,12 +78,12 @@
         
                 .picture-horizontal {
                     width: 400px;
-                    @include overlaySprzedany;
+                    // @include overlaySprzedany;
                 }
         
                 .picture-vertical {
                     width: 380px;
-                    @include overlaySprzedany;
+                    // @include overlaySprzedany;
 
                     .overlay {
                         font-size: 30px;

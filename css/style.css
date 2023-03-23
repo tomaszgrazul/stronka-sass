@@ -8,6 +8,7 @@
   transition: all 0.3s;
   font-family: "Cinzel", serif;
   font-size: 15px;
+  letter-spacing: 0.15em;
 }
 .akrylowe .btn-abstrakcje button:hover, .akrylowe .btn-mandale button:hover, .olejne .btn-naturalistyczne button:hover, .olejne .btn-abstrakcje-olejne button:hover {
   background-color: #8FC9D9;
@@ -42,7 +43,6 @@
 .akrylowe-abstrakcje .gallery-container .gallery-picture .picture-vertical,
 .akrylowe-mandale .gallery-container .gallery-picture .picture-vertical {
   border: 8px double rgb(242, 239, 239);
-  box-shadow: 0 0 10px rgb(150, 150, 150);
   transition: opacity 0.5s;
   position: relative;
 }
@@ -93,13 +93,15 @@
   margin-top: 130px;
 }
 .szkice .gallery-container header, .olejne-naturalistyczne .gallery-container header, .olejne-abstrakcje .gallery-container header, .akrylowe-abstrakcje .gallery-container header, .akrylowe-mandale .gallery-container header {
-  flex-basis: 80%;
+  flex-basis: 100%;
 }
 .szkice .gallery-container header p, .olejne-naturalistyczne .gallery-container header p, .olejne-abstrakcje .gallery-container header p, .akrylowe-abstrakcje .gallery-container header p, .akrylowe-mandale .gallery-container header p {
   font-family: "Cinzel", serif;
-  color: #FF7D69;
+  color: #AA2C18;
   font-size: 20px;
   padding-bottom: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
 }
 .szkice .gallery-container .gallery-picture, .olejne-naturalistyczne .gallery-container .gallery-picture, .olejne-abstrakcje .gallery-container .gallery-picture, .akrylowe-abstrakcje .gallery-container .gallery-picture, .akrylowe-mandale .gallery-container .gallery-picture {
   display: flex;
@@ -406,7 +408,7 @@ input[type=checkbox], input[type=radio] {
 }
 .main-header-container .main-header-sign-container img {
   position: absolute;
-  height: 90px;
+  height: 125px;
 }
 .main-header-container .main-header-sign-container a {
   text-decoration: none;
@@ -425,7 +427,7 @@ input[type=checkbox], input[type=radio] {
   align-items: center;
 }
 .social-links .social-link {
-  font-size: 30px;
+  font-size: 25px;
   color: grey;
   transition: all 0.3s;
   margin: 0 20px;
@@ -515,7 +517,7 @@ nav .open-menu-holder ul .nav-item {
   padding: 30px;
   color: #9C9C9C;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   transition: all 0.3s;
   text-decoration: none;
@@ -596,15 +598,15 @@ nav .open-menu-holder ul .nav-item:hover {
   margin: 30px;
   text-shadow: 0px 5px rgb(53, 53, 53);
   text-align: center;
-  color: #AA2C18;
+  color: white;
   font-family: "Jura", sans-serif;
-  letter-spacing: 5px;
+  letter-spacing: 0.25em;
 }
 
 .main-section {
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gwiazda-1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gwiazda.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -614,8 +616,8 @@ nav .open-menu-holder ul .nav-item:hover {
   display: none;
 }
 .main-section .top-container {
-  background-color: rgba(186, 184, 184, 0.5294117647);
-  top: 140px;
+  background-color: rgba(255, 255, 255, 0.45);
+  top: 190px;
   position: relative;
   display: flex;
   align-items: center;
@@ -635,11 +637,10 @@ nav .open-menu-holder ul .nav-item:hover {
   margin-left: 250px;
 }
 .main-section .bottom-container p {
-  padding-bottom: 5px;
-  padding: 10px;
+  line-height: 1.4em;
   transition: all 0.3s;
   font-family: "Cinzel", serif;
-  font-size: 22px;
+  font-size: 20px;
   color: aliceblue;
   text-decoration: none;
 }
@@ -673,22 +674,10 @@ nav .open-menu-holder ul .nav-item:hover {
   }
 }
 .akrylowe-mandale .gallery-picture {
-  flex-basis: 33%;
+  flex-basis: 26%;
 }
 .akrylowe-mandale .gallery-picture .picture-horizontal {
-  width: 400px;
-}
-.akrylowe-mandale .gallery-picture .picture-horizontal:hover .overlay {
-  opacity: 1;
-}
-.akrylowe-mandale .gallery-picture .picture-horizontal .overlay {
-  position: absolute;
-  opacity: 0;
-  font-size: 50px;
-  font-family: "Cinzel", serif;
-  font-weight: 700;
-  color: black;
-  letter-spacing: 5px;
+  width: 470px;
 }
 
 @media (max-width: 440px) {
@@ -703,18 +692,6 @@ nav .open-menu-holder ul .nav-item:hover {
   }
   .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal {
     width: 300px;
-  }
-  .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal:hover .overlay {
-    opacity: 1;
-  }
-  .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal .overlay {
-    position: absolute;
-    opacity: 0;
-    font-size: 50px;
-    font-family: "Cinzel", serif;
-    font-weight: 700;
-    color: black;
-    letter-spacing: 5px;
   }
   .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal .overlay {
     font-size: 30px;
@@ -733,21 +710,9 @@ nav .open-menu-holder ul .nav-item:hover {
   .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal {
     width: 400px;
   }
-  .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal:hover .overlay {
-    opacity: 1;
-  }
-  .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal .overlay {
-    position: absolute;
-    opacity: 0;
-    font-size: 50px;
-    font-family: "Cinzel", serif;
-    font-weight: 700;
-    color: black;
-    letter-spacing: 5px;
-  }
 }
 .akrylowe-abstrakcje .gallery-container header {
-  flex-basis: 65%;
+  flex-basis: 100%;
 }
 .akrylowe-abstrakcje .gallery-picture {
   flex-basis: 100%;
@@ -797,9 +762,9 @@ nav .open-menu-holder ul .nav-item:hover {
   opacity: 1;
 }
 .olejne .olejne-container {
-  height: 50px;
+  height: 80px;
   color: rgb(194, 24, 24);
-  background-color: rgba(255, 255, 255, 0.8196078431);
+  background-color: rgba(255, 255, 255, 0.7);
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -807,7 +772,7 @@ nav .open-menu-holder ul .nav-item:hover {
   top: 170px;
 }
 .olejne .olejne-container header {
-  height: 50px;
+  height: 80px;
   display: flex;
   align-items: center;
   flex-basis: 100%;
@@ -815,8 +780,9 @@ nav .open-menu-holder ul .nav-item:hover {
 .olejne .olejne-container header .olejne-text {
   margin-left: 250px;
   font-family: "Cinzel", serif;
-  font-size: 20px;
-  color: #FF7D69;
+  font-size: 22px;
+  font-weight: 700;
+  color: #AA2C18;
 }
 .olejne .btn-abstrakcje-olejne {
   flex-basis: 100%;
@@ -869,37 +835,13 @@ nav .open-menu-holder ul .nav-item:hover {
   }
 }
 .olejne-abstrakcje .gallery-picture {
-  flex-basis: 33%;
+  flex-basis: 25%;
 }
 .olejne-abstrakcje .gallery-picture .picture-horizontal {
-  width: 400px;
-}
-.olejne-abstrakcje .gallery-picture .picture-horizontal:hover .overlay {
-  opacity: 1;
-}
-.olejne-abstrakcje .gallery-picture .picture-horizontal .overlay {
-  position: absolute;
-  opacity: 0;
-  font-size: 50px;
-  font-family: "Cinzel", serif;
-  font-weight: 700;
-  color: black;
-  letter-spacing: 5px;
+  width: 600px;
 }
 .olejne-abstrakcje .gallery-picture .picture-vertical {
-  width: 300px;
-}
-.olejne-abstrakcje .gallery-picture .picture-vertical:hover .overlay {
-  opacity: 1;
-}
-.olejne-abstrakcje .gallery-picture .picture-vertical .overlay {
-  position: absolute;
-  opacity: 0;
-  font-size: 50px;
-  font-family: "Cinzel", serif;
-  font-weight: 700;
-  color: black;
-  letter-spacing: 5px;
+  width: 430px;
 }
 .olejne-abstrakcje .gallery-picture .picture-vertical .overlay {
   font-size: 30px;
@@ -918,32 +860,8 @@ nav .open-menu-holder ul .nav-item:hover {
   .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal {
     width: 300px;
   }
-  .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal:hover .overlay {
-    opacity: 1;
-  }
-  .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal .overlay {
-    position: absolute;
-    opacity: 0;
-    font-size: 50px;
-    font-family: "Cinzel", serif;
-    font-weight: 700;
-    color: black;
-    letter-spacing: 5px;
-  }
   .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical {
     width: 300px;
-  }
-  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical:hover .overlay {
-    opacity: 1;
-  }
-  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical .overlay {
-    position: absolute;
-    opacity: 0;
-    font-size: 50px;
-    font-family: "Cinzel", serif;
-    font-weight: 700;
-    color: black;
-    letter-spacing: 5px;
   }
   .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical .overlay {
     font-size: 30px;
@@ -962,69 +880,21 @@ nav .open-menu-holder ul .nav-item:hover {
   .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal {
     width: 400px;
   }
-  .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal:hover .overlay {
-    opacity: 1;
-  }
-  .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal .overlay {
-    position: absolute;
-    opacity: 0;
-    font-size: 50px;
-    font-family: "Cinzel", serif;
-    font-weight: 700;
-    color: black;
-    letter-spacing: 5px;
-  }
   .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical {
     width: 380px;
-  }
-  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical:hover .overlay {
-    opacity: 1;
-  }
-  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical .overlay {
-    position: absolute;
-    opacity: 0;
-    font-size: 50px;
-    font-family: "Cinzel", serif;
-    font-weight: 700;
-    color: black;
-    letter-spacing: 5px;
   }
   .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical .overlay {
     font-size: 30px;
   }
 }
 .olejne-naturalistyczne .gallery-picture {
-  flex-basis: 33%;
+  flex-basis: 35%;
 }
 .olejne-naturalistyczne .gallery-picture .picture-horizontal {
-  width: 400px;
-}
-.olejne-naturalistyczne .gallery-picture .picture-horizontal:hover .overlay {
-  opacity: 1;
-}
-.olejne-naturalistyczne .gallery-picture .picture-horizontal .overlay {
-  position: absolute;
-  opacity: 0;
-  font-size: 50px;
-  font-family: "Cinzel", serif;
-  font-weight: 700;
-  color: black;
-  letter-spacing: 5px;
+  width: 650px;
 }
 .olejne-naturalistyczne .gallery-picture .picture-vertical {
-  width: 300px;
-}
-.olejne-naturalistyczne .gallery-picture .picture-vertical:hover .overlay {
-  opacity: 1;
-}
-.olejne-naturalistyczne .gallery-picture .picture-vertical .overlay {
-  position: absolute;
-  opacity: 0;
-  font-size: 50px;
-  font-family: "Cinzel", serif;
-  font-weight: 700;
-  color: black;
-  letter-spacing: 5px;
+  width: 550px;
 }
 .olejne-naturalistyczne .gallery-picture .picture-vertical .overlay {
   font-size: 30px;
@@ -1043,32 +913,8 @@ nav .open-menu-holder ul .nav-item:hover {
   .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal {
     width: 300px;
   }
-  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal:hover .overlay {
-    opacity: 1;
-  }
-  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal .overlay {
-    position: absolute;
-    opacity: 0;
-    font-size: 50px;
-    font-family: "Cinzel", serif;
-    font-weight: 700;
-    color: black;
-    letter-spacing: 5px;
-  }
   .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical {
     width: 300px;
-  }
-  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical:hover .overlay {
-    opacity: 1;
-  }
-  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical .overlay {
-    position: absolute;
-    opacity: 0;
-    font-size: 50px;
-    font-family: "Cinzel", serif;
-    font-weight: 700;
-    color: black;
-    letter-spacing: 5px;
   }
   .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical .overlay {
     font-size: 30px;
@@ -1087,32 +933,8 @@ nav .open-menu-holder ul .nav-item:hover {
   .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal {
     width: 400px;
   }
-  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal:hover .overlay {
-    opacity: 1;
-  }
-  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal .overlay {
-    position: absolute;
-    opacity: 0;
-    font-size: 50px;
-    font-family: "Cinzel", serif;
-    font-weight: 700;
-    color: black;
-    letter-spacing: 5px;
-  }
   .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical {
     width: 380px;
-  }
-  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical:hover .overlay {
-    opacity: 1;
-  }
-  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical .overlay {
-    position: absolute;
-    opacity: 0;
-    font-size: 50px;
-    font-family: "Cinzel", serif;
-    font-weight: 700;
-    color: black;
-    letter-spacing: 5px;
   }
   .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical .overlay {
     font-size: 30px;
@@ -1122,10 +944,10 @@ nav .open-menu-holder ul .nav-item:hover {
   flex-basis: 35%;
 }
 .szkice .gallery-picture .picture-horizontal {
-  width: 500px;
+  width: 650px;
 }
 .szkice .gallery-picture .picture-vertical {
-  width: 350px;
+  width: 450px;
 }
 
 @media (max-width: 440px) {
@@ -1178,9 +1000,9 @@ nav .open-menu-holder ul .nav-item:hover {
   opacity: 1;
 }
 .akrylowe .akrylowe-container {
-  height: 50px;
+  height: 80px;
   color: rgb(194, 24, 24);
-  background-color: rgba(255, 255, 255, 0.8196078431);
+  background-color: rgba(255, 255, 255, 0.7);
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -1188,7 +1010,7 @@ nav .open-menu-holder ul .nav-item:hover {
   top: 170px;
 }
 .akrylowe .akrylowe-container header {
-  height: 50px;
+  height: 80px;
   display: flex;
   align-items: center;
   flex-basis: 100%;
@@ -1196,8 +1018,9 @@ nav .open-menu-holder ul .nav-item:hover {
 .akrylowe .akrylowe-container header .akrylowe-text {
   margin-left: 250px;
   font-family: "Cinzel", serif;
-  font-size: 20px;
-  color: #FF7D69;
+  font-size: 22px;
+  font-weight: 700;
+  color: #AA2C18;
 }
 .akrylowe .btn-mandale {
   flex-basis: 100%;
@@ -1437,23 +1260,30 @@ nav .open-menu-holder ul .nav-item:hover {
     width: 300px;
   }
 }
-footer {
-  background-color: rgba(186, 184, 184, 0.5294117647);
+.footer-secondary, .footer-primary {
+  background-color: rgba(255, 255, 255, 0.7);
   position: fixed;
-  bottom: 0;
+  bottom: 20px;
   display: flex;
   align-items: center;
   height: 50px;
   width: 100%;
 }
-footer .footer-text {
+.footer-secondary .footer-text, .footer-primary .footer-text {
   margin-left: 250px;
   font-family: "Jura", sans-serif;
-  color: #FFFFFF;
+  color: #243236;
+}
+
+.footer-secondary {
+  position: initial;
+  box-shadow: 0px -3px 5px rgb(129, 126, 126);
+  margin-top: 20px;
 }
 
 @media (max-width: 400px) {
-  footer .footer-text {
+  .footer-primary .footer-text,
+  .footer-secondary .footer-text {
     margin-left: 70px;
   }
 }/*# sourceMappingURL=style.css.map */

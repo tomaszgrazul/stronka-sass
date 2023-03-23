@@ -7,6 +7,7 @@
     transition: all 0.3s;
     font-family: $third-font;
     font-size: 15px;
+    letter-spacing: 0.15em;
 
     &:hover {
         background-color: #8FC9D9;
@@ -40,7 +41,7 @@
 
 %frame{
     border: 8px double rgb(242, 239, 239);
-    box-shadow: 0 0 10px rgb(150, 150, 150);
+    // box-shadow: 0 0 10px rgb(150, 150, 150);
     transition: opacity .5s;
     position: relative;
 
@@ -92,13 +93,15 @@
         margin-top: 130px;
     
         header {
-            flex-basis: 80%;
+            flex-basis: 100%;
     
             p {
                 font-family: $third-font;
                 color: $secondary-font-color;
                 font-size: 20px;
                 padding-bottom: 10px;
+                font-weight: 700;
+                letter-spacing: 0.1em;
             }
         }
 

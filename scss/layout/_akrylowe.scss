@@ -19,9 +19,9 @@
     }
 
     .akrylowe-container {
-        height: 50px;
+        height: 80px;
         color: rgb(194 24 24);
-        background-color: #ffffffd1;
+        background-color: rgba(255, 255, 255, 0.7);
         position: relative;
         display: flex;
         flex-wrap: wrap;
@@ -29,7 +29,7 @@
         top: 170px;
 
         header {
-            height: 50px;
+            height: 80px;
             display: flex;
             align-items: center;
             flex-basis: 100%;
@@ -38,7 +38,8 @@
             .akrylowe-text {
                 margin-left: 250px;
                 font-family: $third-font;
-                font-size: 20px;
+                font-size: 22px;
+                font-weight: 700;
                 color: $secondary-font-color
             }
         }
