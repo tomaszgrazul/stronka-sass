@@ -711,6 +711,9 @@ nav .open-menu-holder ul .nav-item:hover {
     width: 400px;
   }
 }
+.akrylowe-abstrakcje {
+  position: initial;
+}
 .akrylowe-abstrakcje .gallery-container header {
   flex-basis: 100%;
 }
@@ -719,6 +722,9 @@ nav .open-menu-holder ul .nav-item:hover {
 }
 .akrylowe-abstrakcje .gallery-picture .picture-horizontal {
   width: 400px;
+}
+.akrylowe-abstrakcje .footer-primary {
+  box-shadow: 0px -3px 5px rgb(129, 126, 126);
 }
 
 @media (max-width: 440px) {
