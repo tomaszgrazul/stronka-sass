@@ -2,3 +2,5 @@
 2. W js lepiej operowac na klasach czy dodawać style?
 3. Poprawić skalowanie obrazka w modal
 4. Czy w js potrzeba ciagle wyłączać klasy
+5. Samozamykający się modal w wersji mobilnej.
+6. Wersje językowe
